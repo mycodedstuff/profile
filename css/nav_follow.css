@@ -277,3 +277,14 @@ nav{
     border-radius: 100%;
     margin-bottom: 50px;
 }
+
+#socialclosebtn{
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 2em;
+    top: 0px;
+    right: -65px;
+}
