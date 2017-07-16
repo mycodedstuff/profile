@@ -14,11 +14,15 @@ function closeNav() {
 
 function followToggle(){
     if($("#follow").css("right") == "-320px"){
+        $(".social").css("display","block");
         $("#follow").css("display","block");
         $("#follow").css("right","70px");
     }
     else{
         $("#follow").css("right","-320px");
+        setTimeout(function(){
+            $(".social").css("display","none");
+        },1000);
         followover();
     }
 }
