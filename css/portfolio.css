@@ -1,6 +1,10 @@
 body{
+    position: absolute;
     background: url(../images/web-background-design-portfolio-website-grey.jpg) center center no-repeat fixed;
     background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .border-circle{
@@ -14,6 +18,8 @@ body{
     animation: outerspin 1s infinite linear;
     box-shadow: 15px 10px 15px 2px rgba(0,0,0,0.5);
     transition: transform 1.2s;
+    -webkit-transition: transform 1.2s;
+    -moz-transition: transform 1.2s;
 }
 
 .face{
@@ -31,10 +37,18 @@ body{
     background: url(../images/me.png) center center no-repeat;
     background-size: cover;
     transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -webkit-transition: transform 1s;
 }
 
 .face:hover{
     transform: scale(1.085);
+    -o-transform: scale(1.085);
+    -ms-transform: scale(1.085);
+    -webkit-transform: scale(1.085);
+    -moz-transform: scale(1.085);
 }
 
 .navbar-toggle label{
