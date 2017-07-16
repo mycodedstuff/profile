@@ -1,0 +1,60 @@
+body{
+    background: url(../images/projects_background.jpg) center center fixed no-repeat;
+    background-size: cover;
+}
+
+.transparent-layer{
+    background: rgba(0,0,0,0.2) fixed center center;;
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    padding: 0;
+}
+
+#project_pane{
+}
+
+#project_pane a{
+    margin-bottom: 10px;
+}
+
+.thumbnail{
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none !important;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(38,38,45,1))
+}
+
+.btn{
+    width: 100px;
+    margin: 0 10px;
+}
+
+.thumbnail img{
+    margin-top: 8px;
+    width: 95%;
+    transition: transform 0.8s;
+    border-radius: 5px;
+}
+
+.thumbnail img:hover{
+    transform: scale(1.05);
+}
+
+
+.caption{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+.caption h2{
+    font-size: 3em;
+    margin-left: 1%;
+}
+
+button label{
+    font-size: 13px;
+}
