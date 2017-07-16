@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aman Singh (Software & Web Developer)</title>
+        <link href="images/favicon.png" rel="icon">
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!--Animate.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <!--jQuery 3.2.1-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--Loading Screen-->
+        <link href="css/loading.css" rel="stylesheet">
+        <!-- Google Font Roboto Slab-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <!--Webpage Dependencies-->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link href="css/nav_follow.css" rel="stylesheet">
+        <link href="css/home.css" rel="stylesheet">
+    </head>
+    <body onload="hideLoading()">
+        <div class="back" onload="showloading()">
+            <div id="loading">
+                <span class="inline animated bounceInUp" id="l">
+                <p><span class="letter">L</span></p>
+                <p><span id="l-bar" class="load-bar"></span></p>
+                </span>
+                <span class="inline animated bounceInDown" id="o">
+                <p><span class="letter">O</span></p>
+                <p><span id="o-bar" class="load-bar"></span></p>
+                </span>
+                <span class="inline animated bounceInUp" id="a">
+                <p><span class="letter">A</span></p>
+                <p><span id="a-bar" class="load-bar"></span></p>
+                </span>
+                <span class="inline animated bounceInDown" id="d">
+                <p><span class="letter">D</span></p>
+                <p><span id="d-bar" class="load-bar"></span></p>
+                </span>
+                <span class="inline animated bounceInUp" id="i">
+                <p><span class="letter">I</span></p>
+                <p><span id="i-bar" class="load-bar"></span></p>
+                </span>
+                <span class="inline animated bounceInDown" id="n">
+                <p><span class="letter">N</span></p>
+                <p><span id="n-bar" class="load-bar"></span></p>
+                </span>
+                <span class="inline animated bounceInUp" id="g">
+                <p><span class="letter">G</span></p>
+                <p><span id="g-bar" class="load-bar"></span></p>
+                </span>
+            </div>
+        </div>
+        <!--Loading Script-->
+        <script src="js/loading.js"></script>
+        <div id="mainWebpage">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="nav-profile-circle">
+                    <div class="nav-profile">
+                    </div>
+                </div>
+                <div class="text-effect">
+                  <a href="index.html" class="active"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
+                  <a href="portfolio.html"><span class="glyphicon glyphicon-user"></span>&nbsp;Portfolio</a>
+                  <a href="projects.html"><span class="glyphicon glyphicon-tasks"></span>&nbsp;Projects</a>
+                  <a href="#"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;Contact</a>
+                </div>
+            </div>
+            <div id="mainDiv" class="container-fluid transparent-layer">
+                <button id="nav-toggle" class="navbar-toggle" onclick="openNav()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <label>Home</label>
+                </button>
+                <div id="follow" class="followpane">
+                <div class="followtext" onclick="followToggle()" onmouseout="followout()">
+                    <a>FOLLOW&nbsp;ME</a>
+                </div>
+                <div class="social" onmouseout="followout()" onmouseover="followover()">
+                    <a href="https://www.facebook.com/13Aman137" class="link facebook" target="blank"><span class="fa fa-facebook-square"></span></a>
+                    <a href="https://plus.google.com/+AmanSinghProfile" class="link google-plus" target="blank"><span class="fa fa-google-plus-square"></span></a>
+                    <a href="https://instagram.com/instaamansingh/" class="link instagaram" target="blank"><span class="fa fa-google-plus-square"></span></a>
+                    <a href="https://www.linkedin.com/in/13aman137/" class="link linkedin" target="blank"><span class="fa fa-google-plus-square"></span></a>
+                    <a href="https://twitter.com/Aman_Singh_3797" class="link twitter" target="blank"><span class="fa fa-twitter"></span></a>
+                </div>
+            </div>
+                <div class="border-circle">
+                    <div class="face">
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="col-md-offset-1 col-md-10">
+                        <div id="myName" class="name">
+                            <p>Aman Singh</p>
+                            <p>Software & Web Developer<span class="blink">|</span></p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div id="contents" class="row">
+                        <div class="col-md-4">
+                            <a href="portfolio.html"><span id="content1" class="diamond"></span></a>
+                        </div>
+                        <div class="col-md-4 ">
+                            <a href="projects.html"><span id="content2" class="diamond"></span></a>
+                        </div>
+                        <div class="col-md-4">
+                            <span id="content3" class="diamond"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>This Website is Designed By Aman Singh, &copy; Copyright <strong>Aman Singh</strong> since 2017<a><button class="btn btn-info">Credits</button></a>
+                </p>
+            </div>
+        </div>
+        <!--jQuery UI-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <!-- Latest compiled and minified Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/nav_follow.js"></script>
+        <script src="js/home.js"></script>
+
+    </body> 
+</html>
+
