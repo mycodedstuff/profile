@@ -27,17 +27,18 @@ function followToggle(){
     }
 }
 
-document.addEventListener('contextmenu', event => event.preventDefault());
-
-function followout(){
-    if(follow_action == undefined){
-        follow_action = setTimeout(function(){
-            followToggle();
-        },2000);
-    }
-}
-
-function followover(){
-    clearTimeout(follow_action);
-    follow_action = undefined;
-}
+$(function(){
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    $("#socialclosebtn").click(function(){
+       followToggle(); 
+    });
+    $(".closebtn").click(function(){
+        closeNav();
+    });
+    $("#nav-toggle").click(function(){
+        openNav();
+    });
+    $(".followtext").click(function(){
+       followToggle(); 
+    });
+});
