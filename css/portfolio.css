@@ -1,3 +1,7 @@
+#mainPage{
+    overflow: hidden;
+}
+
 body{
     position: absolute;
     background: url(../images/web-background-design-portfolio-website-grey.jpg) center center no-repeat fixed;
@@ -31,7 +35,6 @@ body{
     height: 150px;
     width: 150px;
     margin: 10px auto;
-    overflow: hidden;
     border: 10px solid yellow;
     border-radius: 100%;
     background: url(../images/me.png) center center no-repeat;
