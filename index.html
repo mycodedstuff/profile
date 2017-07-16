@@ -10,8 +10,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!--Animate.css-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        <!--jQuery 3.2.1-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!--Loading Screen-->
         <link href="css/loading.css" rel="stylesheet">
         <!-- Google Font Roboto Slab-->
@@ -54,11 +52,9 @@
                 </span>
             </div>
         </div>
-        <!--Loading Script-->
-        <script src="js/loading.js"></script>
         <div id="mainWebpage">
             <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
                 <div class="nav-profile-circle">
                     <div class="nav-profile">
                     </div>
@@ -71,22 +67,23 @@
                 </div>
             </div>
             <div id="mainDiv" class="container-fluid transparent-layer">
-                <button id="nav-toggle" class="navbar-toggle" onclick="openNav()">
+                <button id="nav-toggle" class="navbar-toggle">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <label>Home</label>
                 </button>
                 <div id="follow" class="followpane">
-                <div class="followtext" onclick="followToggle()">
+                <div class="followtext">
                     <a>FOLLOW&nbsp;ME</a>
                 </div>
-                <div class="social" onmouseout="followout()" onmouseover="followover()">
+                <div class="social">
                     <a href="https://www.facebook.com/13Aman137" class="link facebook" target="blank"><span class="fa fa-facebook-square"></span></a>
                     <a href="https://plus.google.com/+AmanSinghProfile" class="link google-plus" target="blank"><span class="fa fa-google-plus-square"></span></a>
                     <a href="https://instagram.com/instaamansingh/" class="link instagaram" target="blank"><span class="fa fa-google-plus-square"></span></a>
                     <a href="https://www.linkedin.com/in/13aman137/" class="link linkedin" target="blank"><span class="fa fa-google-plus-square"></span></a>
                     <a href="https://twitter.com/Aman_Singh_3797" class="link twitter" target="blank"><span class="fa fa-twitter"></span></a>
+                    <a id="socialclosebtn">&times;</a>
                 </div>
             </div>
                 <div class="border-circle">
@@ -120,6 +117,10 @@
                 </p>
             </div>
         </div>
+        <!--Loading Script-->
+        <!--jQuery 3.2.1-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/loading.js"></script>
         <!--jQuery UI-->
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <!-- Latest compiled and minified Bootstrap JavaScript -->
