@@ -209,10 +209,11 @@ nav{
     width: 400px;
     position: absolute;
     top: 2%;
-    right: -325px;
+    right: -320px;
 }
 
 .social{
+    display: block;
     border-bottom: 2px solid white;
     border-bottom-left-radius: 10px;
     margin-left: 80px;
