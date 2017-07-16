@@ -1,5 +1,3 @@
-
-var follow_toggle = false;
 var follow_action;
 function openNav() {
     $("#nav-toggle").css("visibility","hidden");
@@ -15,13 +13,12 @@ function closeNav() {
 }
 
 function followToggle(){
-    if(!follow_toggle){
+    if($("#follow").css("right") == "-320px"){
+        $("#follow").css("display","block");
         $("#follow").css("right","70px");
-        follow_toggle = true;
     }
     else{
-        follow_toggle = false;
-        $("#follow").css("right","-325px");
+        $("#follow").css("right","-320px");
         followover();
     }
 }
@@ -29,14 +26,14 @@ function followToggle(){
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 function followout(){
-//    if(follow_action == undefined){
-//        follow_action = setTimeout(function(){
-//            followToggle();
-//        },2000);
-//    }
+    if(follow_action == undefined){
+        follow_action = setTimeout(function(){
+            followToggle();
+        },2000);
+    }
 }
 
 function followover(){
-//    clearTimeout(follow_action);
-//    follow_action = undefined;
+    clearTimeout(follow_action);
+    follow_action = undefined;
 }
