@@ -13,55 +13,57 @@
         <link rel="stylesheet" href="css/portfolio.css">
     </head>
     <body>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="nav-profile-circle">
-                <div class="nav-profile">
+        <div id="mainPage">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="nav-profile-circle">
+                    <div class="nav-profile">
+                    </div>
+                </div>
+                <div class="text-effect">
+                  <a href="index.html" class="active"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
+                  <a href="portfolio.html"><span class="glyphicon glyphicon-user"></span>&nbsp;Portfolio</a>
+                  <a href="projects.html"><span class="glyphicon glyphicon-tasks"></span>&nbsp;Projects</a>
+                  <a href="#"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;Contact</a>
                 </div>
             </div>
-            <div class="text-effect">
-              <a href="index.html" class="active"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
-              <a href="portfolio.html"><span class="glyphicon glyphicon-user"></span>&nbsp;Portfolio</a>
-              <a href="projects.html"><span class="glyphicon glyphicon-tasks"></span>&nbsp;Projects</a>
-              <a href="#"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;Contact</a>
-            </div>
-        </div>
-        <div id="mainDiv" class="container-fluid transparent-layer">
-            <button id="nav-toggle" class="navbar-toggle" onclick="openNav()">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <label>Portfolio</label>
-            </button>
-            <div id="follow" class="followpane">
-                <div class="followtext" onclick="followToggle()">
-                    <a>FOLLOW&nbsp;ME</a>
+            <div id="mainDiv" class="container-fluid transparent-layer">
+                <button id="nav-toggle" class="navbar-toggle" onclick="openNav()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <label>Portfolio</label>
+                </button>
+                <div id="follow" class="followpane">
+                    <div class="followtext" onclick="followToggle()">
+                        <a>FOLLOW&nbsp;ME</a>
+                    </div>
+                    <div class="social" onmouseout="followout()" onmouseover="followover()">
+                        <a href="https://www.facebook.com/13Aman137" class="link facebook" target="blank"><span class="fa fa-facebook-square"></span></a>
+                        <a href="https://plus.google.com/+AmanSinghProfile" class="link google-plus" target="blank"><span class="fa fa-google-plus-square"></span></a>
+                        <a href="https://instagram.com/instaamansingh/" class="link instagaram" target="blank"><span class="fa fa-google-plus-square"></span></a>
+                        <a href="https://www.linkedin.com/in/13aman137/" class="link linkedin" target="blank"><span class="fa fa-google-plus-square"></span></a>
+                        <a href="https://twitter.com/Aman_Singh_3797" class="link twitter" target="blank"><span class="fa fa-twitter"></span></a>
+                    </div>
                 </div>
-                <div class="social" onmouseout="followout()" onmouseover="followover()">
-                    <a href="https://www.facebook.com/13Aman137" class="link facebook" target="blank"><span class="fa fa-facebook-square"></span></a>
-                    <a href="https://plus.google.com/+AmanSinghProfile" class="link google-plus" target="blank"><span class="fa fa-google-plus-square"></span></a>
-                    <a href="https://instagram.com/instaamansingh/" class="link instagaram" target="blank"><span class="fa fa-google-plus-square"></span></a>
-                    <a href="https://www.linkedin.com/in/13aman137/" class="link linkedin" target="blank"><span class="fa fa-google-plus-square"></span></a>
-                    <a href="https://twitter.com/Aman_Singh_3797" class="link twitter" target="blank"><span class="fa fa-twitter"></span></a>
+                <div class="border-circle">
+                    <div class="face">
+                    </div>
                 </div>
-            </div>
-            <div class="border-circle">
-                <div class="face">
-                </div>
-            </div>
-            <div class="container">
-                <div class="about">
-                    <div class="scroll">
-                        <div class="inner">
-                            <h2>Name : Aman Singh</h2>
-                            <h2>Interested In : Software & Web Development</h2>
-                            <h2>Education : Currently pursuing B.Tech in C.S.E.</h2>
-                            <h2>College : Lovely Professional University, Jalandhar</h2>
-                            <h2>Current College Year : 3<sup>rd</sup> yr.</h2>
-                            <h2>Currently Working : Self but seeking for work.</h2>
-                            <h2>Current Location</h2>
-                            <div id="googleMaps"></div>
-                            <h2>Checkout my <a class="linkedInLogo" target="_blank" href="https://www.linkedin.com/in/13aman137/"></a> Profile</h2>
+                <div class="container">
+                    <div class="about">
+                        <div class="scroll">
+                            <div class="inner">
+                                <h2>Name : Aman Singh</h2>
+                                <h2>Interested In : Software & Web Development</h2>
+                                <h2>Education : Currently pursuing B.Tech in C.S.E.</h2>
+                                <h2>College : Lovely Professional University, Jalandhar</h2>
+                                <h2>Current College Year : 3<sup>rd</sup> yr.</h2>
+                                <h2>Currently Working : Self but seeking for work.</h2>
+                                <h2>Current Location</h2>
+                                <div id="googleMaps"></div>
+                                <h2>Checkout my <a class="linkedInLogo" target="_blank" href="https://www.linkedin.com/in/13aman137/"></a> Profile</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
