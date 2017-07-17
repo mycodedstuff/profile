@@ -53,6 +53,7 @@ body{
     -o-transition: transform 1s;
     -webkit-transition: transform 1s;
     -moz-transition: transform 1s;
+    z-index: 20;
 }
 
 .face:hover{

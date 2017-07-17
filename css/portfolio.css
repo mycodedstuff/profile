@@ -3,12 +3,8 @@
 }
 
 body{
-    position: absolute;
     background: url(../images/web-background-design-portfolio-website-grey.jpg) center center fixed no-repeat;
-    background-size: 100% 100%;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+    background-size: cover;
 }
 
 .border-circle{
@@ -59,11 +55,8 @@ body{
 }
 
 .transparent-layer{
-    background: rgba(0,0,0,0.5) fixed center center;;
-    position: absolute;
+    background: rgba(0,0,0,0.5) fixed center center;
     background-size: cover;
-    width: 100%;
-    height: 100%;
     margin-top: 0;
     padding: 0;
 }
