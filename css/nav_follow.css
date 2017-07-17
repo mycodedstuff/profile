@@ -79,7 +79,8 @@ nav{
 
 #nav-toggle{
     width: 70px;
-    float: left;
+    position: absolute;
+    left: 0;
     display: inline;
     border: 2px solid rgba(255,255,255,.5);
 }
@@ -198,7 +199,8 @@ nav{
 }
 
 .followpane{
-    float: right;
+    position: absolute;
+    right: 0;
     z-index: 2000;
     transition: 1s;
     margin-top: 20px;
