@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1.0">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>My Projects</title>
+        <link href="images/favicon.png" rel="icon">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/nav_follow.css">
+        <link rel="stylesheet" href="css/projects.css">
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav-profile-circle">
+                <div class="nav-profile">
+                </div>
+            </div>
+            <div class="text-effect">
+              <a href="index.html" class="active"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
+              <a href="portfolio.html"><span class="glyphicon glyphicon-user"></span>&nbsp;Portfolio</a>
+              <a href="#"><span class="glyphicon glyphicon-tasks"></span>&nbsp;Projects</a>
+              <a href="#"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;Contact</a>
+            </div>
+        </div>
+        <div id="mainDiv" class="container-fluid transparent-layer">
+            <button id="nav-toggle" class="navbar-toggle" onclick="openNav()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <label>Projects</label>
+            </button>
+            <div id="follow" class="followpane">
+                <div class="followtext">
+                    <a>FOLLOW&nbsp;ME</a>
+                </div>
+                <div id="social-container">
+                    <div class="social">
+                        <a href="https://www.facebook.com/13Aman137" class="link facebook" target="blank"><span class="fa fa-facebook-square"></span></a>
+                        <a href="https://plus.google.com/+AmanSinghProfile" class="link google-plus" target="blank"><span class="fa fa-google-plus-square"></span></a>
+                        <a href="https://instagram.com/instaamansingh/" class="link instagaram" target="blank"><span class="fa fa-google-plus-square"></span></a>
+                        <a href="https://www.linkedin.com/in/13aman137/" class="link linkedin" target="blank"><span class="fa fa-google-plus-square"></span></a>
+                        <a href="https://twitter.com/Aman_Singh_3797" class="link twitter" target="blank"><span class="fa fa-twitter"></span></a>
+                        <a id="socialclosebtn">&times;</a>
+                    </div>
+                </div>
+            <div class="container">
+                <div class="caption">
+                    <h2>My Projects</h2>
+                </div>
+            </div>
+            <div class="container" id="project_pane">
+                <div class="row">
+                    <div class="col-xs-6 col-md-4">
+                        <span class="thumbnail">
+                            <img src="images/projects.png">
+                            <h3>Project Title</h3>
+                            <p><button class="btn btn-primary">View</button><button class="btn btn-success">Screenshots</button></p>
+                        </span>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <span class="thumbnail">
+                            <img src="images/projects.png">
+                            <h3>Project Title</h3>
+                            <p><button class="btn btn-primary">View</button><button class="btn btn-success">Screenshots</button></p>
+                        </span>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <span class="thumbnail">
+                            <img src="images/projects.png">
+                            <h3>Project Title</h3>
+                            <p><button class="btn btn-primary">View</button><button class="btn btn-success">Screenshots</button></p>
+                        </span>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <span class="thumbnail">
+                            <img src="images/projects.png">
+                            <h3>Project Title</h3>
+                            <p><button class="btn btn-primary">View</button><button class="btn btn-success">Screenshots</button></p>
+                        </span>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <span class="thumbnail">
+                            <img src="images/projects.png">
+                            <h3>Project Title</h3>
+                            <p><button class="btn btn-primary">View</button><button class="btn btn-success">Screenshots</button></p>
+                        </span>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <span class="thumbnail">
+                            <img src="images/projects.png">
+                            <h3>Project Title</h3>
+                            <p><button class="btn btn-primary">View</button><button class="btn btn-success">Screenshots</button></p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/nav_follow.js"></script>
+        <script src="js/projects.js"></script>
+    </body>
+</html>
