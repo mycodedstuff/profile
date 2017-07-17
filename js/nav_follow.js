@@ -14,11 +14,11 @@ function closeNav() {
 
 function followToggle(){
     if($("#social-container").css("width") == "0px"){
-        $("#social-container").animate({width: "100%"},{duration: 500, queue: false, easing: "linear"});
+        $("#social-container").animate({width: "380px"},{duration: 500, queue: false, easing: "linear"});
         $("#follow").animate({width: "460px"},{duration: 500, queue: false, easing: "linear"});
     }
     else{
-        $("#follow").animate({width: "80px"},{duration: 500, queue: false, easing: "linear"});
+        $("#follow").animate({width: "80px"},{duration: 0, queue: false, easing: "swing"});
         $("#social-container").animate({width: "0px"},{duration: 1220, queue: false, easing: "linear"});
     }
 }
