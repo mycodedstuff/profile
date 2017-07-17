@@ -13,17 +13,13 @@ function closeNav() {
 }
 
 function followToggle(){
-    if($("#follow").css("right") == "-320px"){
-        $(".social").css("display","block");
-        $("#follow").css("display","block");
-        $("#follow").css("right","70px");
+    if($("#social-container").css("width") == "0px"){
+        $("#social-container").animate({width: "100%"},{duration: 500, queue: false, easing: "linear"});
+        $("#follow").animate({width: "460px"},{duration: 500, queue: false, easing: "linear"});
     }
     else{
-        $("#follow").css("right","-320px");
-        setTimeout(function(){
-            $(".social").css("display","none");
-        },1000);
-        followover();
+        $("#follow").animate({width: "80px"},{duration: 500, queue: false, easing: "linear"});
+        $("#social-container").animate({width: "0px"},{duration: 1220, queue: false, easing: "linear"});
     }
 }
 
