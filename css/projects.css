@@ -13,7 +13,7 @@ body{
 }
 
 #project_pane{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #project_pane .row{
@@ -45,21 +45,54 @@ body{
 }
 
 .thumbnail img:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
+}
+
+.thumbnail h3{
+    color: rgb(236,245,230);
 }
 
 
 .caption{
+    cursor: default;
     margin-top: 30px;
     text-align: center;
     color: white;
+    margin-bottom: 30px;
 }
 
 .caption h2{
     font-size: 3em;
-    margin-left: 1%;
+}
+
+@media screen and (min-width:356px) and (max-width:410px){
+    .caption h2{
+        font-size: 2.4em;
+    }
+    #project_pane{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:356px){
+    .caption h2{
+        font-size: 2.2em;
+    }
+    #project_pane{
+        margin-top: 20px;
+    }
 }
 
 button label{
     font-size: 13px;
+}
+
+.footer{
+    padding: 3px;
+    text-align: center;
+    color: white;
+}
+
+.footer a{
+    margin-left: 20px;
 }

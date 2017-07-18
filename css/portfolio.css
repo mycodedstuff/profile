@@ -126,3 +126,14 @@ body{
     width: 100px;
     height: 23px;
 }
+
+.footer{
+    margin-top: 20px;
+    padding: 3px;
+    text-align: center;
+    color: white;
+}
+
+.footer a{
+    margin-left: 20px;
+}
