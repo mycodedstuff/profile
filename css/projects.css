@@ -1,7 +1,6 @@
 body{
-    background: url(../images/projects_background.jpg) center center no-repeat;
+    background: url(../images/projects_background.jpg) center center fixed no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .transparent-layer{

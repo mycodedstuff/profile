@@ -13,11 +13,11 @@ body{
 }
 
 .transparent-layer{
+    position: absolute;
     background: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100%;
     margin-top: 0;
     padding: 0;
+    width: 100%;
 }
 
 .border-circle{
@@ -189,11 +189,15 @@ h3{
 }
 
 .footer{
+    height: 100%;
     text-align: center;
     width: 100%;
     background-color: black;
     color: white;
     bottom: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
 }
 
 .footer a{

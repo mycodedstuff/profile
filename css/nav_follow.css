@@ -52,6 +52,8 @@ nav{
 .sidenav div a{
     width: 200px;
     transition: margin 0.8s;
+    -webkit-transition: margin 0.8s;
+    -moz-transition: margin 0.8s;
 }
 
 .sidenav div a:hover{
@@ -83,10 +85,11 @@ nav{
     left: 0;
     display: inline;
     border: 2px solid rgba(255,255,255,.5);
+    transition: background-color 0.4s;
 }
 
 .navbar-toggle:hover{
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(0,0,0,0.4);
 }
 
 .navbar-toggle label{
@@ -132,7 +135,6 @@ nav{
 }
 
 .social .link:hover {
-    color: white;
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -201,7 +203,7 @@ nav{
 .followpane{
     position: absolute;
     right: 0;
-    z-index: 2000;
+    z-index: 200;
     transition: 1s;
     margin-top: 20px;
     width: 80px;
@@ -290,4 +292,8 @@ nav{
     height: 30px;
     font-size: 2em;
     margin-left: 40px;
+}
+
+.credits{
+    display: none;
 }

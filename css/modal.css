@@ -1,0 +1,79 @@
+#credits{
+    width: 75%;
+    margin: 10vh auto 0px auto;
+    overflow: hidden;
+}
+
+.modal-header h4{
+    text-align: center;
+}
+
+.modal-body{
+    text-align: center;
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+#credits .row a{
+    margin: 12px 10px;
+    height: 200px
+}
+
+.pixabay{
+    display: block;
+    background: url(../images/pixabay.png) center center no-repeat;
+    background-size: 100%;
+}
+.udemy{
+    background: url(../images/udemy.png) center center no-repeat;
+    display: block;
+    background-size: 100%;
+}
+.stackoverflow{
+    background: url(../images/stackoverflow.png) center center no-repeat;
+    display: block;
+    background-size: 100%;
+}
+.codepen{
+    background: url(../images/codepen.png) center center no-repeat;
+    display: block;
+    background-size: 100%;
+}
+.animate_css{
+    background: url(../images/animate.jpg) center center no-repeat;
+    display: block;
+    background-size: 100%;
+}
+.flatuicolor{
+    background: url(../images/flatuicolor.png) center center no-repeat;
+    display: block;
+    background-size: 100%;
+}
+
+@media screen and (max-width:768px){
+    #credits .row a{
+        margin: 0px 10px;
+        height: 150px;  
+    }
+}
+
+@media screen and (min-width:520px) and (max-width: 700px){
+    #credits .row a{
+        margin: 0px 10px;
+        height: 130px;   
+    }
+}
+
+@media screen and (min-width:440px) and (max-width: 520px){
+    #credits .row a{
+        margin: 0px 10px;
+        height: 100px;   
+    }
+}
+
+@media screen and (max-width: 440px){
+    #credits .row a{
+        margin: 0px 10px;
+        height: 80px;   
+    }
+}
