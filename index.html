@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
         <link href="css/nav_follow.css" rel="stylesheet">
         <link href="css/home.css" rel="stylesheet">
+        <link href="css/modal.css" rel="stylesheet">
     </head>
     <body>
         <div class="back">
@@ -100,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid no-padding">
+                <div class="container-fluid">
                     <div id="contents" class="row">
                         <div class="col-md-4">
                             <a href="portfolio.html" id="content1" class="diamond"></a>
@@ -114,8 +115,40 @@
                     </div>
                 </div>
                 <div class="footer">
-                    <p>This Website is Designed By Aman Singh,<br/>&copy; Copyright <strong>Aman Singh</strong> since 2017.<a><button class="btn btn-info">Credits</button></a>
+                    <p>This Website is Designed By Aman Singh,<br/>&copy; Copyright <strong>Aman Singh</strong> since 2017.<a><button class="btn btn-info" data-target="#credits" data-toggle="modal">Credits</button></a>
                     </p>
+                </div>
+                <div id="credits" class="modal animated bounceInUp" role="dialog">
+                    <div class="modal-content animated ">
+                        <div class="modal-header">
+                            <button class="close" id="credits-close" data-dismiss="modal">&times;</button>
+                            <h4>Some people deserve credits</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4">
+                                        <a href="https://pixabay.com/" target="_blank" class="pixabay"></a>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <a href="https://www.udemy.com/" target="_blank" class="udemy"></a>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <a href="https://daneden.github.io/animate.css/" target="_blank" class="animate_css"></a>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <a href="https://stackoverflow.com/" target="_blank" class="stackoverflow"></a>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <a href="https://codepen.io/" target="_blank" class="codepen"></a>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <a href="https://flatuicolors.com" target="_blank" class="flatuicolor"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,7 +160,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="js/nav_follow.js"></script>
         <script src="js/home.js"></script>
-
+        <script src="js/modal.js"></script>
     </body> 
 </html>
-
