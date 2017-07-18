@@ -18,8 +18,8 @@ function followToggle(){
         $("#follow").animate({width: "460px"},{duration: 0, queue: false, easing: "linear"});
     }
     else{
-        $("#follow").animate({width: "80px"},{duration: 0, queue: false, easing: "swing"});
-        $("#social-container").animate({width: "0px"},{duration: 1220, queue: false, easing: "linear"});
+        $("#follow").animate({width: "80px"},{duration: 0, queue: false, easing: "linear"});
+        $("#social-container").animate({width: "0px"},{duration: 900, queue: false, easing: "swing"});
     }
 }
 
