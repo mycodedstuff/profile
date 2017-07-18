@@ -13,7 +13,7 @@ body{
 }
 
 .transparent-layer{
-    position: absolute;
+/*    position: absolute;*/
     background: rgba(0,0,0,0.5);
     margin-top: 0;
     padding: 0;
