@@ -1,11 +1,10 @@
 body{
-    position: absolute;
+    position: static;
     background: url(../images/work.jpg) center center no-repeat;
     background-size: cover;
     overflow: hidden;
     width: 100%;
     text-align: left;
-    height: auto;
 }
 
 #mainWebpage{
