@@ -11,6 +11,7 @@ body{
 
 #mainWebpage{
     display: none;
+    overflow: hidden;
 }
 
 .transparent-layer{
