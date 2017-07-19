@@ -1,23 +1,22 @@
 body{
     position: static;
-    background: url(../images/work.jpg) center center no-repeat;
+    background: url(../images/work.jpg) center center fixed no-repeat;
     background-size: cover;
     overflow: hidden;
     width: 100%;
     text-align: left;
+    height: auto;
+    padding: 0 !important 
 }
 
 #mainWebpage{
     display: none;
-    overflow: hidden;
 }
 
 .transparent-layer{
-    position: absolute;
     background: rgba(0,0,0,0.5);
-    margin-top: 0;
-    padding: 0;
     width: 100%;
+    padding: 0;
 }
 
 .border-circle{
@@ -67,7 +66,7 @@ body{
 .name{
     cursor: default;
     letter-spacing: 4px;
-    margin: 5px auto 15px auto;
+    margin: 5px auto 16px auto;
     color: white;
     background: rgba(0,0,0,0.4);
     padding: 5px;
@@ -82,7 +81,7 @@ body{
 }
 
 .name:hover{
-    margin-bottom: 14px;
+    margin-bottom: 15px;
     border-bottom: 2px solid white;
 }
 
@@ -194,7 +193,6 @@ h3{
     width: 100%;
     background-color: black;
     color: white;
-    bottom: 0;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
