@@ -1,6 +1,6 @@
 body{
     position: absolute;
-    background: url(../images/work.jpg) center center fixed no-repeat;
+    background: url(../images/work.jpg) center center no-repeat;
     background-size: cover;
     overflow: hidden;
     width: 100%;
