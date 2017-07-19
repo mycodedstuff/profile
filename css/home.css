@@ -1,5 +1,5 @@
 body{
-    position: static;
+    position: absolute;
     background: url(../images/work.jpg) center center fixed no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -13,7 +13,7 @@ body{
 }
 
 .transparent-layer{
-/*    position: absolute;*/
+    position: absolute;
     background: rgba(0,0,0,0.5);
     margin-top: 0;
     padding: 0;
