@@ -5,6 +5,7 @@ body{
     overflow: hidden;
     width: 100%;
     text-align: left;
+    height: auto;
 }
 
 #mainWebpage{
