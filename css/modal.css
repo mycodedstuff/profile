@@ -6,6 +6,8 @@
 
 .modal-header h4{
     text-align: center;
+    font-size: 2em;
+    color: black;
 }
 
 .modal-body{
@@ -17,6 +19,12 @@
 #credits .row a{
     margin: 12px 10px;
     height: 200px
+}
+
+.pushback{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
 }
 
 .pixabay{
@@ -49,14 +57,12 @@
     display: block;
     background-size: 100%;
 }
-
-@media screen and (max-width:768px){
+@media screen and (min-width:700px) and (max-width: 992px){
     #credits .row a{
         margin: 0px 10px;
         height: 150px;  
     }
 }
-
 @media screen and (min-width:520px) and (max-width: 700px){
     #credits .row a{
         margin: 0px 10px;

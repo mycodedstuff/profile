@@ -86,6 +86,16 @@ body{
     border-bottom: 2px solid white;
 }
 
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
 @media screen and (min-width: 610px) and (max-width: 720px){
     .name p:nth-child(2){
         font-size: 38px !important;
@@ -215,4 +225,27 @@ h3{
 
 .footer a{
     margin-left: 20px;
+}
+
+.welcome{
+    display: none;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(rgba(236, 240, 241,1.0),rgba(0,0,0,0.5));
+}
+
+.welcome-container{
+    margin-top: 36vh;
+}
+
+.welcome-letter{
+    font-size: 5em;
+    letter-spacing: 10px;
+    color: rgba(44, 62, 80,1.0);
 }

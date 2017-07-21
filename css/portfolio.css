@@ -5,12 +5,18 @@
 body{
     background: url(../images/web-background-design-portfolio-website-grey.jpg) center center fixed no-repeat;
     background-size: cover;
+    overflow-y: scroll;
+    padding: 0 !important;
+}
+
+.modal-open{
+    overflow-y: scroll !important;
 }
 
 .border-circle{
-    margin: 30px auto;
-    width: 190px;;
-    height: 190px;
+    margin: 20px auto 20px auto;
+    width: 200px;;
+    height: 200px;
     text-align: center;
     border: 10px dashed white;
     border-style: solid;
@@ -28,8 +34,8 @@ body{
     transform: 1.2s;
     text-align: center;
     cursor: pointer;
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
     margin: 10px auto;
     border: 10px solid yellow;
     border-radius: 100%;
@@ -59,6 +65,7 @@ body{
     background-size: cover;
     margin-top: 0;
     padding: 0;
+    width: 100%;
 }
 
 .about{

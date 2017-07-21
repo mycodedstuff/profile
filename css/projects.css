@@ -1,6 +1,9 @@
 body{
     background: url(../images/projects_background.jpg) center center fixed no-repeat;
     background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0 !important;
 }
 
 .transparent-layer{
@@ -9,6 +12,10 @@ body{
     width: 100%;
     margin-top: 0;
     padding: 0;
+}
+
+.modal-open{
+    overflow-y: scroll;
 }
 
 #project_pane{
