@@ -10,9 +10,11 @@ $(function(){
             }
         });
         clipboard.on("success",function(event){
-            $(".copied").animate({opacity: 1},{duration: 500, complete: function(){
+            $(".copied").css("display","block").animate({opacity: 1},{duration: 500, complete: function(){
                 setTimeout(function(){
-                    $(".copied").animate({opacity: 0},1000);
+                    $(".copied").animate({opacity: 0},{duration: 1000, complete: function(){
+                        $(this).css("display","none");
+                    }});
                 },1000);
             }});
         });
