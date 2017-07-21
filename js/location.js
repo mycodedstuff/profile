@@ -10,13 +10,14 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: mylocation,
         map: map,
-        animation : google.maps.Animation.BOUNCE
+        animation : google.maps.Animation.BOUNCE,
+        icon: "./images/custom-marker.png"
     });
     google.maps.event.addDomListener(window, 'resize', function() {
         map.setCenter(mylocation);
     });
     var infoWindow = new google.maps.InfoWindow({
-        content : "<div style='float: left'><img style='height:80px; width: 80px' src='images/me.png'><p style='color: black;'><strong>That's where I am.</strong></p></div>",
+        content : "<div style='float: left; color: black;'><strong>That's where I am.</strong></div>",
         maxWidth: 140
     });
     marker.addListener("click", function(){
