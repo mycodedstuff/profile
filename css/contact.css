@@ -136,6 +136,7 @@ textarea{
   visibility: hidden;
   border-radius: 6px;
 }
+
 .tooltips span:after {
   content: '';
   position: absolute;
@@ -147,6 +148,7 @@ textarea{
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
 }
+
 .mail-id:hover.tooltips span {
   visibility: visible;
   opacity: 0.8;
@@ -158,6 +160,7 @@ textarea{
 }
 
 .copied{
+    display: none;
     opacity: 0;
     position: fixed;
     right: 20px;
