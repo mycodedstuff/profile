@@ -1,63 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-        <title>Aman Singh (Software & Web Developer)</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Contact Me</title>
         <link href="images/favicon.png" rel="icon">
-        <!-- Latest compiled and minified Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="dns-prefetch" href="//fonts.googleapis.com">
-        <link rel="dns-prefetch" href="//code.jquery.com">
         <!--Animate.css-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        <!--Loading Screen-->
-        <link href="css/loading.css" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- Google Font Roboto Slab-->
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-        <!--Webpage Dependencies-->
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-        <link href="css/common.css" rel="stylesheet">
-        <link href="css/home.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/contact.css">
         <link href="css/modal.css" rel="stylesheet">
     </head>
     <body>
-        <div class="back">
-            <div id="loading">
-                <span class="inline animated bounceInUp" id="l">
-                <p><span class="letter">L</span></p>
-                <p><span id="l-bar" class="load-bar"></span></p>
-                </span>
-                <span class="inline animated bounceInDown" id="o">
-                <p><span class="letter">O</span></p>
-                <p><span id="o-bar" class="load-bar"></span></p>
-                </span>
-                <span class="inline animated bounceInUp" id="a">
-                <p><span class="letter">A</span></p>
-                <p><span id="a-bar" class="load-bar"></span></p>
-                </span>
-                <span class="inline animated bounceInDown" id="d">
-                <p><span class="letter">D</span></p>
-                <p><span id="d-bar" class="load-bar"></span></p>
-                </span>
-                <span class="inline animated bounceInUp" id="i">
-                <p><span class="letter">I</span></p>
-                <p><span id="i-bar" class="load-bar"></span></p>
-                </span>
-                <span class="inline animated bounceInDown" id="n">
-                <p><span class="letter">N</span></p>
-                <p><span id="n-bar" class="load-bar"></span></p>
-                </span>
-                <span class="inline animated bounceInUp" id="g">
-                <p><span class="letter">G</span></p>
-                <p><span id="g-bar" class="load-bar"></span></p>
-                </span>
-            </div>
-        </div>
-        <div id="mainWebpage">
+        <div id="mainPage">
             <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="nav-profile-circle">
                     <div class="nav-profile">
                     </div>
@@ -70,14 +33,13 @@
                 </div>
             </div>
             <div id="mainDiv" class="container-fluid transparent-layer">
-                <div class="pushback">
-                    <button id="nav-toggle" class="navbar-toggle">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <label>Home</label>
-                    </button>
-                    <div id="follow" class="followpane">
+                <button id="nav-toggle" class="navbar-toggle" onclick="openNav()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <label>Contact Me</label>
+                </button>
+                <div id="follow" class="followpane">
                     <div class="followtext">
                         <a>FOLLOW&nbsp;ME</a>
                     </div>
@@ -92,35 +54,46 @@
                         </div>
                     </div>
                 </div>
-                    <div class="border-circle">
-                        <div class="face">
-                        </div>
+                <div id="contact-page" class="contact container-fluid">
+                    <div id="contact-header">
+                        <h2>Get in touch</h2>
                     </div>
-                    <div class="container-fluid no-padding">
-                        <div class="col-md-offset-1 col-md-10">
-                            <div id="myName" class="name">
-                                <p>Aman Singh</p>
-                                <p>Software & Web Developer<span class="blink">|</span></p> 
-                            </div>
-                        </div>
+                    <div id="more-ways">
+                        <p>Few more ways to contact</p>
                     </div>
                     <div class="container-fluid">
-                        <div id="contents" class="row">
-                            <div class="col-md-4">
-                                <a href="portfolio.html" id="content1" class="diamond"></a>
+                        <div class="row">
+                            <div id="send-mail" class="col-sm-6 col-md-5">
+                                <form class="mail" method="post" enctype="text/plain">
+                                    <div class="form-group">
+                                      <label for="name">Name:</label>
+                                      <input type="text" class="form-control" id="name" placeholder="So what can I call you?" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="email">Email:</label>
+                                      <input type="email" class="form-control" id="email" placeholder="Email is must to get in touch" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="comment">Feel free to express:</label>
+                                      <textarea id="comment" class="form-control" name="comment" placeholder="Say whatever you want to.." rows="10"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-success"><span class="	glyphicon glyphicon-send"></span>&nbsp;&nbsp;Send</button>
+                                </form>
                             </div>
-                            <div class="col-md-4 ">
-                                <a href="projects.html" id="content2" class="diamond"></a>
-                            </div>
-                            <div class="col-md-4">
-                                <a href="contact.html" id="content3" class="diamond"></a>
+                            <div id="contact-info" class="col-sm-6 col-md-offset-1 col-md-6">
+                                <h3><span class="glyphicon glyphicon-envelope"></span> Email : <span class="mail-id tooltips" data-clipboard-target=".mail-id">singh.aman956@gmail.com<span class="tooltip">Copy to clipboard</span></span></h3>
+                                <h3>Meet me here:</h3>
+                                <div id="googleMaps"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="footer">
-                        <p>This Website is Designed By Aman Singh,<br/>&copy; Copyright <strong>Aman Singh</strong> since 2017.<a><button class="btn btn-info" data-target="#credits" data-toggle="modal">Credits</button></a>
-                        </p>
-                    </div>
+                </div>
+                <div class="copied">
+                    <p>Copied to clipboard</p>
+                </div>
+                <div class="footer">
+                    <p>This Website is Designed By Aman Singh,<br/>&copy; Copyright <strong>Aman Singh</strong> since 2017.<a><button class="btn btn-info" data-target="#credits" data-toggle="modal">Credits</button></a>
+                    </p>
                 </div>
                 <div id="credits" class="modal animated bounceInUp" role="dialog">
                     <div class="modal-content animated ">
@@ -156,14 +129,15 @@
                 </div>
             </div>
         </div>
-        <!--Loading Script-->
-        <!--jQuery 3.2.1-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/loading.js"></script>
-        <!-- Latest compiled and minified Bootstrap JavaScript -->
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFJrUYXi8XFwvUZh3W_EDtN7Rpf0_bOWg&callback=initMap"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
         <script src="js/common.js"></script>
-        <script src="js/home.js"></script>
+        <script src="js/location.js"></script>
+        <script src="js/contact.js"></script>
         <script src="js/modal.js"></script>
-    </body> 
+    </body>
 </html>
