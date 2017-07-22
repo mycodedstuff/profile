@@ -24,7 +24,9 @@ function followToggle(){
 }
 
 $(function(){
-    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.addEventListener('contextmenu', function(event){
+        event.preventDefault();
+    });
     $("#socialclosebtn").click(function(){
        followToggle(); 
     });

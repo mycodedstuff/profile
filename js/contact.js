@@ -1,7 +1,21 @@
 $(function(){
     $("form").submit(function(event){
         event.preventDefault();
-        
+        $.ajax({
+            url: "https://formspree.io/singh.aman956@gmail.com", 
+            method: "POST",
+            data: {name: $("#name").val(),
+                   email: $("#email").val(),
+                   message: $("#message").val()
+                  },
+            dataType: "json",
+            success: function(){
+                
+            },
+            error: function(){
+                
+            }
+        });
     });
     if(Clipboard.isSupported()){
         var clipboard = new Clipboard(".mail-id", {
