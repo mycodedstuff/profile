@@ -26,10 +26,10 @@
                     </div>
                 </div>
                 <div class="text-effect">
-                  <a href="index.html" class="active"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
+                  <a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
                   <a href="portfolio.html"><span class="glyphicon glyphicon-user"></span>&nbsp;Portfolio</a>
                   <a href="projects.html"><span class="glyphicon glyphicon-tasks"></span>&nbsp;Projects</a>
-                  <a href="contact.html"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;Contact</a>
+                  <a href="contact.html" class="active"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;Contact</a>
                 </div>
             </div>
             <div id="mainDiv" class="container-fluid transparent-layer">
@@ -64,18 +64,18 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div id="send-mail" class="col-sm-6 col-md-5">
-                                <form class="mail" method="post" enctype="text/plain">
+                                <form class="mail"  method="post">
                                     <div class="form-group">
                                       <label for="name">Name:</label>
-                                      <input type="text" class="form-control" id="name" placeholder="So what can I call you?" name="email">
+                                      <input type="text" class="form-control" id="name" placeholder="So what can I call you?" name="name" required>
                                     </div>
                                     <div class="form-group">
                                       <label for="email">Email:</label>
-                                      <input type="email" class="form-control" id="email" placeholder="Email is must to get in touch" name="email">
+                                      <input type="email" class="form-control" id="email" placeholder="Email is must to get in touch." name="email" required>
                                     </div>
                                     <div class="form-group">
                                       <label for="comment">Feel free to express:</label>
-                                      <textarea id="comment" class="form-control" name="comment" placeholder="Say whatever you want to.." rows="10"></textarea>
+                                      <textarea id="message" class="form-control" name="message" placeholder="Write something, I would love to hear from you." rows="10" required></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-success"><span class="	glyphicon glyphicon-send"></span>&nbsp;&nbsp;Send</button>
                                 </form>
@@ -133,9 +133,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="js/location.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFJrUYXi8XFwvUZh3W_EDtN7Rpf0_bOWg&callback=initMap"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+        <script src="js/location.js"></script>
         <script src="js/common.js"></script>
         <script src="js/contact.js"></script>
         <script src="js/modal.js"></script>
