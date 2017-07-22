@@ -3,7 +3,6 @@ body{
     background-size: cover;
     position: relative;
     margin: 0;
-    padding-bottom: 6rem;
     min-height: 100%;
 }
 
@@ -47,7 +46,7 @@ html{
 }
 
 .projects{
-    margin: 10vh auto 40px auto;
+    margin: 10vh auto 120px auto;
     width: 90%;
     text-align: center;
 }
