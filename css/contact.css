@@ -1,18 +1,32 @@
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+
 body{
-    background: url(../images/c.png) center center fixed no-repeat;
+    background: url(../images/contact-wallpaper.png) center center fixed no-repeat;
     background-size: cover;
     width: 100%;
     color: white;
+    min-height: 100%;
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
 }
 
 #contact-page{
     text-align: center;
+    margin-bottom: 40px;
 }
 
 #mainDiv{
     cursor: default;
     width: 100%;
     padding: 0;
+}
+
+.sidenav{
+    background: linear-gradient(to left,rgba(0,0,0,0),rgba(0,0,0,.8));
 }
 
 #contact-header{
@@ -159,6 +173,33 @@ textarea{
   z-index: 999;
 }
 
+@media screen and (min-width:400px) and (max-width:660px){
+    .tooltips span:after {
+        top: 100%;
+        right: 50%;
+        margin-top: -5px;
+        transform: rotate(-90deg);
+    }
+
+    .mail-id:hover.tooltips span {
+        left: 20%;
+        top: -20px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .tooltips span:after {
+        top: 100%;
+        right: 50%;
+        margin-top: -5px;
+        transform: rotate(-90deg);
+    }
+    .mail-id:hover.tooltips span {
+        left: -30%;
+        top: -20px;
+    }
+}
+
 .copied{
     display: none;
     opacity: 0;
@@ -191,8 +232,6 @@ textarea{
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    margin-top: 20px;
     padding: 3px;
     text-align: center;
     color: white;
@@ -204,13 +243,6 @@ textarea{
 
 .footer a{
     margin-left: 20px;
-}
-
-@media screen and (max-width:768px){
-    .footer{
-        position: static;
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 600px){

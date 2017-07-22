@@ -1,70 +1,89 @@
 body{
-    background: url(../images/projects_background.jpg) center center fixed no-repeat;
+    background: url(../images/wallpaper2.jpg) center center fixed no-repeat;
     background-size: cover;
-    overflow-x: hidden;
-    width: 100%;
-    padding: 0 !important;
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
 }
 
-.transparent-layer{
-    background: rgba(0,0,0,0.2) fixed center center;
-    background-size: cover;
-    width: 100%;
-    margin-top: 0;
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#mainDiv{
     padding: 0;
+    width: 100%;
 }
 
-.modal-open{
-    overflow-y: scroll;
+.sidenav{
+    background: linear-gradient(to left, rgba(0,0,0,.2), rgba(0,0,0,0.8));
 }
 
-#project_pane{
+.hexagon {
+    background: url(../images/projects.png) center center no-repeat;
+    background-size: cover;
+    width: 220px;
+    height: 250px;
+    overflow: hidden;
+    -webkit-mask-image: url(../images/project_image_mask.jpg);
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.project-pane{
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 20px 20px 20px;
+}
+
+.project-pane:hover{
+    margin-bottom: 18px;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+}
+
+.projects{
+    margin: 10vh auto 40px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.project_title{
+    text-align: center;
+    word-break: break-all;
+    color: white;
+    font-size: 1.5em;
+}
+
+.footer{
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 3px;
+    text-align: center;
+    color: white;
+}
+
+.footer p{
     margin-top: 10px;
 }
 
-#project_pane .row{
-    padding: 0;
-    margin: 0;
+.footer a{
+    margin-left: 20px;
 }
-
-#project_pane a{
-    margin-bottom: 10px;
-}
-
-.thumbnail{
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none !important;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(38,38,45,1))
-}
-
-.btn{
-    width: 100px;
-    margin: 0 10px;
-}
-
-.thumbnail img{
-    margin-top: 8px;
-    width: 95%;
-    transition: transform 0.8s;
-    border-radius: 5px;
-}
-
-.thumbnail img:hover{
-    transform: scale(1.03);
-}
-
-.thumbnail h3{
-    color: rgb(236,245,230);
-}
-
 
 .caption{
     cursor: default;
-    margin-top: 30px;
+    margin-top: 50px;
     text-align: center;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .caption h2{
@@ -75,30 +94,28 @@ body{
     .caption h2{
         font-size: 2.4em;
     }
-    #project_pane{
-        margin-top: 20px;
-    }
 }
 
 @media screen and (max-width:356px){
     .caption h2{
         font-size: 2.2em;
     }
-    #project_pane{
-        margin-top: 20px;
+}
+
+@media screen and (max-width:536px){
+    .hexagon{
+        width: 180px;
+        height: 220px;
+    }
+    .projects{
+        width: 100%;
+        margin-top: 50px;
     }
 }
 
-button label{
-    font-size: 13px;
-}
-
-.footer{
-    padding: 3px;
-    text-align: center;
-    color: white;
-}
-
-.footer a{
-    margin-left: 20px;
+@media screen and (max-width:594px){
+    .hexagon{
+        width: 170px;
+        height: 190px;
+    }
 }
