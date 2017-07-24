@@ -57,6 +57,11 @@
     display: block;
     background-size: 100%;
 }
+.uigradients{
+    background: url(../images/uigradients.png) center center no-repeat;
+    display: block;
+    background-size: 100%;
+}
 @media screen and (min-width:700px) and (max-width: 992px){
     #credits .row a{
         margin: 0px 10px;

@@ -1,24 +1,19 @@
-html{
-    height: 100%;
-    box-sizing: border-box;
-}
-
 body{
     background: url(../images/contact-wallpaper.png) center center fixed no-repeat;
     background-size: cover;
     width: 100%;
     color: white;
-    min-height: 100%;
-    position: relative;
-    margin: 0;
+    padding: 0 !important;
+    overflow-y: auto !important;
 }
 
 #contact-page{
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
 }
 
 #mainDiv{
+    overflow: hidden;
     cursor: default;
     width: 100%;
     padding: 0;
@@ -134,42 +129,42 @@ textarea{
 }
 
 .tooltips {
-  position: relative;
-  display: inline;
+    position: relative;
+    display: inline;
 }
 
 .tooltips span {
-  position: absolute;
-  width:140px;
-  color: #000000;
-  background: #FFFFFF;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  visibility: hidden;
-  border-radius: 6px;
+    position: absolute;
+    width:140px;
+    color: #000000;
+    background: #FFFFFF;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 6px;
 }
 
 .tooltips span:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  margin-top: -8px;
-  width: 0; height: 0;
-  border-right: 8px solid #FFFFFF;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -8px;
+    width: 0; height: 0;
+    border-right: 8px solid #FFFFFF;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
 }
 
 .mail-id:hover.tooltips span {
-  visibility: visible;
-  opacity: 0.8;
-  left: 100%;
-  top: 50%;
-  margin-top: -15px;
-  margin-left: 15px;
-  z-index: 999;
+    visibility: visible;
+    opacity: 0.8;
+    left: 100%;
+    top: 50%;
+    margin-top: -15px;
+    margin-left: 15px;
+    z-index: 999;
 }
 
 @media screen and (min-width:400px) and (max-width:660px){
@@ -199,7 +194,7 @@ textarea{
     }
 }
 
-.copied{
+.copied, .send-success{
     display: none;
     opacity: 0;
     position: fixed;
@@ -207,15 +202,34 @@ textarea{
     background: rgba(255,255,255,0.8);
     padding: 15px 10px 8px 10px;
     text-align: center;
-    vertical-align: middle;
+    border-radius: 10px;
+    top: 90.4vh;
+    z-index: 1000;
+}
+
+.copied p, .send-success p{
+    text-align: center;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.send-fail{
+    display: none;
+    opacity: 0;
+    position: fixed;
+    right: 20px;
+    padding: 8px 10px 8px 10px;
+    text-align: center;
     border-radius: 10px;
     top: 91vh;
     z-index: 1000;
 }
 
-.copied p{
-    color: black;
+.send-fail p{
+    text-align: center
     padding: 0;
+    margin: 0;
 }
 
 #googleMaps{
@@ -226,11 +240,8 @@ textarea{
 }
 
 .footer{
-    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,1));
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
+    background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
     padding: 3px;
     text-align: center;
     color: white;

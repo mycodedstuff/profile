@@ -1,42 +1,70 @@
 body{
     background: url(../images/wallpaper2.jpg) center center fixed no-repeat;
     background-size: cover;
-    position: relative;
     margin: 0;
-    min-height: 100%;
-}
-
-html{
-    height: 100%;
-    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll !important;
+    width: 100%;
+    text-align: left;
+    height: auto;
+    padding: 0 !important;
 }
 
 #mainDiv{
+    overflow: hidden;
     padding: 0;
     width: 100%;
 }
 
+#nav-toggle label{
+    font-size: .9em;
+}
+
 .sidenav{
-    background: linear-gradient(to left, rgba(0,0,0,.2), rgba(0,0,0,0.8));
+    background: linear-gradient(to left, rgba(0,0,0,.0), rgba(0,0,0,0.8));
 }
 
 .hexagon {
-    background: url(../images/projects.png) center center no-repeat;
-    background-size: cover;
-    width: 220px;
-    height: 250px;
+    background: url(../images/coming-soon.png) !important;
+    background-size: cover !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    width: 250px;
+    height: 280px;
     overflow: hidden;
     -webkit-mask-image: url(../images/project_image_mask.jpg);
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
     text-align: center;
     margin-bottom: 5px;
+    margin: 5px;
 }
 
+/*
+.cpp{
+    background: url(../images/c++.png) center center no-repeat;
+}
+
+.java{
+    background: url(../images/java.png) center center no-repeat;
+}
+
+.python{
+    background: url(../images/python.png) center center no-repeat;
+}
+
+.batch{
+    background: url(../images/batch.png) center center no-repeat;
+}
+*/
+
 .project-pane{
-    cursor: pointer;
     display: inline-block;
+    cursor: pointer;
     margin: 0 20px 20px 20px;
+    padding-bottom: 5px;
+    border-radius: 10px;
 }
 
 .project-pane:hover{
@@ -46,9 +74,14 @@ html{
 }
 
 .projects{
-    margin: 10vh auto 120px auto;
+    margin: 10vh auto 30px auto;
     width: 90%;
     text-align: center;
+    position: sticky;
+}
+
+.projects a{
+    text-decoration: none;
 }
 
 .project_title{
@@ -56,11 +89,55 @@ html{
     word-break: break-all;
     color: white;
     font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.project-details{
+    position: sticky;
+    overflow: hidden;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    margin: 0 auto;
+    width: 90%;
+    height: 0;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.project-content h2{
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-content{
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+}
+
+.highlight-project{
+    background: rgba(255,255,255,0.3);
+}
+
+.close-project{
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    color: red;
+    font-size: 2.5em;
+    right: 2%;
+    padding: 0;
+}
+
+.close-project:hover{
+    color: lightcoral;
 }
 
 .footer{
-    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5));
-    position: absolute;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
     bottom: 0;
     left: 0;
     right: 0;
@@ -89,6 +166,38 @@ html{
     font-size: 3em;
 }
 
+#myCarousel{
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+}
+
+.item div{
+    background: url(../images/coming-soon2.png);
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.image1{
+/*    background: url(../images/about-me.png);*/
+    width: 100%;
+    height: 200px;
+}
+
+.image2{
+/*    background: url(../images/javascript.png);*/
+    width: 100%;
+    height: 200px;
+}
+
+.image3{
+/*    background: url(../images/contact-wallpaper.png);*/
+    width: 100%;
+    height: 200px;
+}
+
 @media screen and (min-width:356px) and (max-width:410px){
     .caption h2{
         font-size: 2.4em;
@@ -98,6 +207,12 @@ html{
 @media screen and (max-width:356px){
     .caption h2{
         font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width:1314px){
+    .projects{
+        margin-top: 30px;
     }
 }
 
@@ -114,7 +229,26 @@ html{
 
 @media screen and (max-width:594px){
     .hexagon{
-        width: 170px;
-        height: 190px;
+        width: 180px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:1314px){
+    .projects{
+        margin-bottom: 170px;
+    }
+}
+
+@media screen and (min-width:594px) and (max-width: 661px){
+    .hexagon{
+        width: 220px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:991px){
+    .project-details{
+        overflow-y: scroll;
     }
 }
