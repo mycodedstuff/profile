@@ -2,18 +2,31 @@ $(function(){
     $("form").submit(function(event){
         event.preventDefault();
         $.ajax({
-            url: "https://formspree.io/singh.aman956@gmail.com", 
+            url: "https://formsee.io/singh.aman956@gmail.com", 
             method: "POST",
             data: {name: $("#name").val(),
                    email: $("#email").val(),
                    message: $("#message").val()
                   },
             dataType: "json",
-            success: function(){
-                
+            success: function(){ $(".send-success").css("display","block").animate({opacity: 1},{duration: 500, complete: function(){
+                setTimeout(function(){
+                        $(".send-success").animate({opacity: 0},{duration: 1000, complete: function(){
+                            $(this).css("display","none");
+                        }});
+                    },1000);
+                }});
+                $("form").trigger("reset");
             },
             error: function(){
-                
+                $(".send-fail").css("display","block").animate({opacity: 1},{duration: 500, complete: function(){
+                setTimeout(function(){
+                        $(".send-fail").animate({opacity: 0},{duration: 1000, complete: function(){
+                            $(this).css("display","none");
+                        }});
+                    },1000);
+                }});
+                $("form").trigger("reset");
             }
         });
     });
