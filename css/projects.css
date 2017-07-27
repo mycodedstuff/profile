@@ -331,3 +331,12 @@ body{
         margin-top: 120px;
     }
 }
+
+@media screen and (max-width:750px){
+    #fullscreen .modal-content{
+        margin: 0;
+    }
+    #fullscreen{
+        padding: 8px !important;
+    }
+}
