@@ -91,9 +91,10 @@ function expandHexagon(element){
 $(function(){
     array = $(".projects").find(".project-pane");
     $('[data-toggle="tooltip"]').tooltip();
-    $('#myCarousel').carousel({interval : 1500, pause: "false"});
-    $('#fullscreen-carousel').carousel({interval : 1500, pause: "false"});
     $(".project-pane").click(function(event){
+        $('#myCarousel').carousel("pause").removeData();
+        $('#fullscreen-carousel').carousel("pause").removeData();
+        $('.carousel').carousel({interval: 1800,pause: "false"});
         callingHexagon = event.currentTarget;
         tag = $(callingHexagon).data("title");
         animateHexagon("shrink");
@@ -104,11 +105,17 @@ $(function(){
         $(".description .content").load("project_details.txt #"+tag);
         $(".carousel-inner").load("project_shots.txt #"+tag, function(){
             $(".carousel-inner").html($(".carousel-inner #"+tag).html());
+            $('#fullscreen-carousel').carousel(0);
+            $('#myCarousel').carousel(0);
+            $('#myCarousel').carousel("cycle");
+            $('#fullscreen-carousel').carousel("cycle");
         });
         title = $(callingHexagon).find(".project_title").text();
         $(".project-content h2").html(title);
     });
     $(".close-project").click(function(){
+        $('#myCarousel').carousel("pause").removeData();
+        $('#fullscreen-carousel').carousel("pause").removeData();
         animateHexagon("expand");
         $.each(array,function(i,e){
             $(e).removeClass("highlight-project");
