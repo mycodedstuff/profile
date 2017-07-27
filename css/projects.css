@@ -10,6 +10,10 @@ body{
     padding: 0 !important;
 }
 
+#mainPage{
+    overflow: hidden !important;
+}
+
 #mainDiv{
     overflow: hidden;
     padding: 0;
