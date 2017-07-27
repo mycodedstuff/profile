@@ -1,0 +1,25 @@
+<div id="adapter">Have you ever struggled with low charge capacity of your laptop battery and always fear that the adapter shouldn't get unplugged to keep the system running. Well I know how that feels like, that's why I developed this software which keeps an eye over the status whether the adapter is plugged or not.
+Just start the software and after a click of a button you don't have to worry and look out every time. This software warn the user whenever their adapter get unplugged.
+Some key features :-
+1. Start monitoring after launching the application automatically.
+2. Give a sound alert with the visual alert (Visual alert is always enabled).
+3. Hibernate system after a certain time if adapter stays unplugged.
+4. Warning box always stays on top so that you never miss any warning.
+5. Warning won't get off until you plug back adapter in (the warning also goes off if you stop the application).
+6. Warning goes off after you plug in adapter.
+7. It does have some hidden surprises go find them out.</div>
+<div id="phonebook">This project was made using Java language. I made it in a way such that multiple person can use single software as an account system where each person have a separate account and only they can access it using a login system to access the contacts they have saved. Even more you can share/import contacts from another account by authorizing into another account.
+This project let's you to manage all of your contacts in an efficient way cause I made it more user friendly.</div>
+<div id="shopping">This project was made by using C++ language.
+This project was made to manage all the information which is required to be maintained by Shopping Mall like Shop details, Events going to be held & there budget, Movies & there timings with screen in which it will be showed.
+This software not even stores the data but also gives you time to time reminders about the activities like which shop has to pay rent today, what events are going to be held today & tomorrow, also about the movie which are currently running.
+It also take cares about the security issues like which guard has duty a which place.
+And even after all of this, this project is made flexible such that the user can customize the home screen.
+But after all of those features the most important this is the software security which is essential as it contains a lot of sensitive information and for that there is a login system made so that only one person or who ever has the authorization can only use this software.</div>
+<div id="windows">This was my first project.
+This project is written in batch language.
+In this project I have tried to replicate looks of an operating system & even made its usability like an operating system only.
+I have added a bunch of features in this project which helps user to customize & even enhance their systems performance.
+As this project acts itself like an operating system so its customizable in itself & have several built in feaures which is requirement for every operating system.
+This project includes various hacks which is required for developers as well as for customizing & for taking full control over your systems.
+Even after all this it has a section named game zone in which user have access to various games for their entertainment.</div>

@@ -1,0 +1,110 @@
+<div id="adapter">
+    <div class="item active">
+        <div style="background-image: url(images/Screenshots/adapter1.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/adapter2.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/adapter3.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/adapter4.PNG)"></div>
+    </div>
+</div>
+<div id="phonebook">
+    <div class="item active">
+        <div style="background-image: url(images/Screenshots/phonebook1.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/phonebook2.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/phonebook3.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/phonebook4.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/phonebook5.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/phonebook6.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/phonebook7.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/phonebook8.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/phonebook9.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/phonebook10.PNG)"></div>
+    </div>    
+</div>
+<div id="shopping">
+    <div class="item active">
+        <div style="background-image: url(images/Screenshots/shopping1.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/shopping2.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/shopping3.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/shopping4.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/shopping5.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/shopping6.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/shopping7.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/shopping8.PNG)"></div>
+    </div>  
+</div>
+<div id="windows">
+    <div class="item active">
+        <div style="background-image: url(images/Screenshots/windows1.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/windows2.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/windows3.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/windows4.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/windows5.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/windows6.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/windows7.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/windows8.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/windows9.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/windows10.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/windows11.PNG)"></div>
+    </div>
+    <div class="item">
+        <div style="background-image: url(images/Screenshots/windows12.PNG)"></div>
+    </div>    
+</div>
