@@ -3,7 +3,7 @@
 }
 
 body{
-    background: url(../images/web-background-design-portfolio-website-grey.jpg) center center fixed no-repeat;
+    background: url(../images/portfolio_background.jpg) center center fixed no-repeat;
     background-size: cover;
     overflow-y: scroll;
     padding: 0 !important;
@@ -134,13 +134,16 @@ body{
     height: 23px;
 }
 
-.known-lang{
+.known-lang, .ongoing{
     margin: 40px auto 60px auto;
     text-align: center;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .hexagon{
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
     display: inline-block;
     height: 160px;
     width: 160px;
@@ -150,60 +153,52 @@ body{
 }
 
 .c{
-    background: url(../images/c.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/c.png);
 }
 
 .cpp{
-    background: url(../images/c++.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/c++.png);
 }
 
 .java{
-    background: url(../images/java.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/java.png);
 }
 
 .python{
-    background: url(../images/python.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/python.png);
 }
 
 .batch{
-    background: url(../images/batch.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/batch.png);
 }
 
 .html5{
-    background: url(../images/html5.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/html5.png);
 }
 
 .css3{
-    background: url(../images/css3.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/css3.png);
 }
 
 .javascript{
-    background: url(../images/javascript.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/javascript.png);
 }
 
 .php{
-    background: url(../images/php.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/php.png);
 }
 
 .jquery{
-    background: url(../images/jquery.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/jquery.png);
 }
 
 .mysql{
-    background: url(../images/mysql.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/mysql.png);
 }
 
+.android{
+    background: url(../images/android.png);
+}
 
 .footer{
     margin-top: 20px;

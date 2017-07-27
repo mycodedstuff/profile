@@ -1,5 +1,5 @@
 body{
-    background: url(../images/wallpaper2.jpg) center center fixed no-repeat;
+    background: url(../images/rainbow.png) center center fixed no-repeat;
     background-size: cover;
     margin: 0;
     overflow-x: hidden;
@@ -25,23 +25,22 @@ body{
 }
 
 .hexagon {
-    background: url(../images/coming-soon.png) !important;
+/*    background: url(../images/coming-soon.png) !important;*/
     background-size: cover !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-    width: 250px;
-    height: 280px;
+    width: 200px;
+    height: 230px;
     overflow: hidden;
     -webkit-mask-image: url(../images/project_image_mask.jpg);
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
     text-align: center;
-    margin-bottom: 5px;
-    margin: 5px;
+    margin: 0 auto;
+    transition: .6s;
 }
 
-/*
 .cpp{
     background: url(../images/c++.png) center center no-repeat;
 }
@@ -57,14 +56,14 @@ body{
 .batch{
     background: url(../images/batch.png) center center no-repeat;
 }
-*/
 
 .project-pane{
     display: inline-block;
     cursor: pointer;
     margin: 0 20px 20px 20px;
-    padding-bottom: 5px;
+    padding: 5px;
     border-radius: 10px;
+    text-align: center;
 }
 
 .project-pane:hover{
@@ -74,7 +73,7 @@ body{
 }
 
 .projects{
-    margin: 10vh auto 30px auto;
+    margin: 15vh auto 0px auto;
     width: 90%;
     text-align: center;
     position: sticky;
@@ -87,8 +86,9 @@ body{
 .project_title{
     text-align: center;
     word-break: break-all;
+    word-wrap: break-word;
     color: white;
-    font-size: 1.5em;
+    font-size: 112%;
     margin-bottom: 5px;
 }
 
@@ -104,6 +104,17 @@ body{
     border-bottom: 4px solid white;
     border-radius: 20px;
     margin-bottom: 30px;
+    overflow-y: scroll;
+    cursor: -webkit-grab;
+}
+
+.project-details::-webkit-scrollbar{
+    width: 0px;
+}
+
+.description .content div{
+    white-space: pre-line;
+    word-break: keep-all;
 }
 
 .project-content h2{
@@ -116,6 +127,7 @@ body{
     width: 90%;
     margin: 0 auto;
     color: white;
+    cursor: grab;
 }
 
 .highlight-project{
@@ -134,6 +146,20 @@ body{
 
 .close-project:hover{
     color: lightcoral;
+}
+
+#fullscreen-close{
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    color: red;
+    right: 1%;
+    top: 1%;
+    opacity: 0.6;
+}
+
+#fullscreen-close:hover{
+    opacity: 1;
 }
 
 .footer{
@@ -166,36 +192,78 @@ body{
     font-size: 3em;
 }
 
+.screenshots h3{
+    margin-right: 40px;
+}
+
 #myCarousel{
-    margin-top: 20px;
+    margin: 20px auto;
     width: 100%;
     height: 200px;
     cursor: pointer;
 }
 
-.item div{
-    background: url(../images/coming-soon2.png);
-    background-size: cover !important;
+#fullscreen .modal-content{
+    background: rgba(255,255,255,0.4);
+    color: white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    border-radius: 12px;
+    margin: 0 40px;
+}
+
+#fullscreen .modal-body{
+    overflow-y: hidden !important;
+    padding: 0;
+}
+
+#fullscreen .modal-header{
+    padding: 5px !important;
+}
+
+#fullscreen .modal-header p{
+    font-size: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#fullscreen{
+    padding: 0;
+    margin: 80px auto;
+    text-align: center;
+}
+
+#myCarousel .carousel-inner{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px auto;
+}
+
+#myCarousel .carousel-inner .item div{
+    background-size: contain !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-}
-
-.image1{
-/*    background: url(../images/about-me.png);*/
     width: 100%;
     height: 200px;
 }
 
-.image2{
-/*    background: url(../images/javascript.png);*/
-    width: 100%;
-    height: 200px;
+#fullscreen-carousel .carousel-inner .item div{
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    width: 90%;
+    min-height: 60vh;
+    margin: 25px auto;
 }
 
-.image3{
-/*    background: url(../images/contact-wallpaper.png);*/
-    width: 100%;
-    height: 200px;
+.code{
+    margin-top: 25px;
+}
+
+.code a{
+    cursor: pointer;
+    text-decoration: none;
+    color: greenyellow;
 }
 
 @media screen and (min-width:356px) and (max-width:410px){
@@ -236,19 +304,27 @@ body{
 
 @media screen and (min-width:1314px){
     .projects{
-        margin-bottom: 170px;
+        margin-bottom: 200px;
     }
 }
 
-@media screen and (min-width:594px) and (max-width: 661px){
-    .hexagon{
-        width: 220px;
-        height: 250px;
+@media screen and (min-width: 500px) and (max-width:750px){
+    #fullscreen .modal-body{
+        height: 60vh;
+    }
+    #fullscreen-carousel .carousel-inner .item div{
+        min-height: 50vh;
     }
 }
 
-@media screen and (max-width:991px){
-    .project-details{
-        overflow-y: scroll;
+@media screen and (min-width: 300px) and (max-width:500px){
+    #fullscreen .modal-body{
+        height: 40vh;
+    }
+    #fullscreen-carousel .carousel-inner .item div{
+        min-height: 30vh;
+    }
+    #fullscreen{
+        margin-top: 120px;
     }
 }
