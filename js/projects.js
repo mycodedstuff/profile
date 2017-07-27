@@ -6,6 +6,8 @@ var initialProjectTitle;
 var array;
 var view_mode = false;
 var callingHexagon;
+var tag;
+var title;
 function initialize(){
     initialProject = {
         marginTop: $(".projects").css("margin-top"),
@@ -27,14 +29,18 @@ function initialize(){
         fontSize: $(".project_title").css("font-size")
     }
 }
+
 function animateHexagon(event){
     if(event == "shrink"){
-        if(!view_mode){initialize();}
+        if(!view_mode){initialize();
+            $(".projects").css("overflow-y","scroll").animate({marginTop: "3vh",height: "180px",marginBottom: "30px"},{duration: 600,queue: false,complete: function(){$(".projects").css("max-height","170px");}});
+            $(".project-details").css("display","block").animate({height: "420px"},{duration: 600, queue: false});
+            $(".caption").animate({fontSize: "0.8em"},{duration: 600,queue:false});
+            setTimeout(function(){callingHexagon.parentNode.scrollTop = callingHexagon.offsetTop;},600);
+        }else{
+            callingHexagon.parentNode.scrollTop = callingHexagon.offsetTop;
+        }
         view_mode = true;
-        $(".projects").css("overflow-y","scroll").animate({marginTop: "3vh",height: "185px",marginBottom: "30px"},{duration: 600,queue: false,complete: function(){$(".projects").css("max-height","185px");}});
-        $(".project-details").css("display","block").animate({height: "420px"},{duration: 600, queue: false});
-        $(".caption").animate({fontSize: "0.8em"},{duration: 600,queue:false});
-        setTimeout(function(){callingHexagon.parentNode.scrollTop = callingHexagon.offsetTop;},600);
     }else{
         view_mode = false;
         $(".projects").css("overflow-y","visible").animate({marginTop: initialProject.marginTop,height: initialProject.height ,marginBottom: initialProject.marginBottom},{duration: 600,queue: false,complete: function(){$(".projects").css("max-height", initialProject.maxHeight).css("max-height","none").css("height","auto");}});
@@ -61,7 +67,7 @@ function shrinkHexagon(element){
         width: "90px",
         height: "120px"
     },{
-        duration: 600,
+        duration: 0,
         queue: false
     });
     $(element).find(".project_title").animate({
@@ -74,7 +80,7 @@ function expandHexagon(element){
         width: initialHexagon.width,
         height: initialHexagon.height
     },{
-        duration: 1200,
+        duration: 400,
         queue: false
     });
     $(element).find(".project_title").animate({
@@ -85,15 +91,22 @@ function expandHexagon(element){
 $(function(){
     array = $(".projects").find(".project-pane");
     $('[data-toggle="tooltip"]').tooltip();
-    $('.carousel').carousel({interval : 2200});
-    $('.carousel').hover(function(){$(this).carousel('pause');} ,function(){$(this).carousel('cycle');});
+    $('#myCarousel').carousel({interval : 1500, pause: "false"});
+    $('#fullscreen-carousel').carousel({interval : 1500, pause: "false"});
     $(".project-pane").click(function(event){
         callingHexagon = event.currentTarget;
+        tag = $(callingHexagon).data("title");
         animateHexagon("shrink");
         $.each(array,function(i,e){
             $(e).removeClass("highlight-project");
         });
         $(this).addClass("highlight-project");
+        $(".description .content").load("project_details.txt #"+tag);
+        $(".carousel-inner").load("project_shots.txt #"+tag, function(){
+            $(".carousel-inner").html($(".carousel-inner #"+tag).html());
+        });
+        title = $(callingHexagon).find(".project_title").text();
+        $(".project-content h2").html(title);
     });
     $(".close-project").click(function(){
         animateHexagon("expand");
