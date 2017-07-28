@@ -39,4 +39,7 @@ $(function(){
     $(".followtext").click(function(){
        followToggle(); 
     });
+    $(".toggle-full").click(function(){
+        screenfull.toggle();
+    });
 });
