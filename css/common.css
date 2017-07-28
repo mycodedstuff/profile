@@ -329,23 +329,3 @@ nav{
 .active{
     color: white !important;
 }
-
-.toggle-full{
-    cursor: pointer;
-    width: 220px;
-    word-break: normal;
-    word-wrap: normal;
-    display: block;
-    color: white;
-    font-size: 1.2em !important;
-    margin-top: 180px;
-    transition: margin 0.8s;
-    padding: 0 0 8px 35px;
-    -webkit-transition: margin 0.8s;
-    -moz-transition: margin 0.8s;
-}
-
-.toggle-full:hover{
-    border-bottom: 2px solid white;
-    border-radius: 10px;
-}
