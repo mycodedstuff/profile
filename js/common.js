@@ -5,7 +5,6 @@ function openNav() {
     $("#mainDiv").stop().animate({marginLeft: "220px"},{duration: 400, queue: false});
 }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
     $("#mySidenav").animate({width: "0"},{duration: 400, queue: false});
     $("#mainDiv").animate({marginLeft: "0"},{duration: 400, queue: false});
@@ -24,22 +23,9 @@ function followToggle(){
 }
 
 $(function(){
-    document.addEventListener('contextmenu', function(event){
-        event.preventDefault();
-    });
-    $("#socialclosebtn").click(function(){
-       followToggle(); 
-    });
-    $(".closebtn").click(function(){
-        closeNav();
-    });
-    $("#nav-toggle").click(function(){
-        openNav();
-    });
-    $(".followtext").click(function(){
-       followToggle(); 
-    });
-    $(".toggle-full").click(function(){
-        screenfull.toggle();
-    });
+    document.addEventListener('contextmenu', function(event){event.preventDefault();});
+    $("#socialclosebtn").click(function(){followToggle();});
+    $(".closebtn").click(function(){closeNav();});
+    $("#nav-toggle").click(function(){openNav();});
+    $(".followtext").click(function(){followToggle();});
 });
