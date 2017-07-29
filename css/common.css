@@ -232,8 +232,9 @@ nav{
     border-bottom: 2px solid white;
     border-bottom-left-radius: 10px;
     overflow: hidden;
-    background: -webkit-linear-gradient(to right, rgba(67,67,67,0.2), rgba(0,0,0,0.2));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgba(67,67,67,0.6), rgba(0,0,0,0.8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, rgba(67,67,67,0.5), rgba(30,30,30,0.7));
+    background: linear-gradient(to right, rgba(67,67,67,0.5), rgba(30,30,30,0.7));
+    background: -moz-linear-gradient(to right, rgba(67,67,67,0.5), rgba(30,30,30,0.7));
 }
 
 #social-container{
