@@ -8,8 +8,26 @@ Some key features :-
 5. Warning won't get off until you plug back adapter in (the warning also goes off if you stop the application).
 6. Warning goes off after you plug in adapter.
 7. It does have some hidden surprises go find them out.</div>
-<div id="phonebook">This project was made using Java language. I made it in a way such that multiple person can use single software as an account system where each person have a separate account and only they can access it using a login system to access the contacts they have saved. Even more you can share/import contacts from another account by authorizing into another account.
-This project let's you to manage all of your contacts in an efficient way cause I made it more user friendly.</div>
+<div id="phonebook">Managing contacts is useful and necessary but is there no reason to be bounded to mobile phones to accomplish it. This project helps you to maintain your contact into a local database. You can also edit them and do all the things you could do on your mobile. But that’s boring so to fill in the gap it comes with an account system which will help user to share their contact’s directly to any user. Also, the user can search for a certain contact over the whole database but I know everybody needs privacy that’s why the contact will only be shared if the contact owner wants to.
+
+Some key features:
+1.	Full contact management.
+2.	Give your contact a face.
+3.	Hey, I haven’t forgot you maintain your profile as well.
+4.	Search for user over full database.
+5.	Share your contact easily whether a contact or your profile it’s up to you.
+6.	Manage your account is now few clicks away.
+7.	Check all your activities using activity log.
+8.	Import contact from some other contact.
+9.	Notification system.
+
+Features to be added soon:
+1.	Backup you contact’s.
+2.	VCF format support.
+3.	Moving to online database from local.
+4.	Choose an avatar for your contacts.
+5.	Use a webcam to upload pictures.
+6.	Account privacy settings (Don’t worry currently you would be at local database, no privacy issue).</div>
 <div id="shopping">This project was made by using C++ language.
 This project was made to manage all the information which is required to be maintained by Shopping Mall like Shop details, Events going to be held & there budget, Movies & there timings with screen in which it will be showed.
 This software not even stores the data but also gives you time to time reminders about the activities like which shop has to pay rent today, what events are going to be held today & tomorrow, also about the movie which are currently running.
