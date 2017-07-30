@@ -8,6 +8,7 @@ var view_mode = false;
 var callingHexagon;
 var tag;
 var title;
+var hideDelay = true;
 function initialize(){
     initialProject = {
         marginTop: $(".projects").css("margin-top"),
@@ -110,6 +111,24 @@ $(function(){
             $('#myCarousel').carousel("cycle");
             $('#fullscreen-carousel').carousel("cycle");
         });
+        $.ajax({
+            url: "project_links.txt",
+            cache: false,
+            dataType: "html",
+            type: "get",
+            success: function(data){
+                var link = $(data).find("#"+tag).text();
+                if(link == ""){
+                    $(".code a").tooltip({
+                        title: "This project is not yet uploaded.",
+                        placement: "auto right"
+                    });
+                }else{
+                    $(".code a").tooltip("destroy");
+                    $(".code a").attr("href", link);
+                }
+            }
+        });
         title = $(callingHexagon).find(".project_title").text();
         $(".project-content h2").html(title);
     });
@@ -120,5 +139,24 @@ $(function(){
         $.each(array,function(i,e){
             $(e).removeClass("highlight-project");
         });
+    });
+    $('#fullscreen').on('hide.bs.modal',function(){
+    if(hideDelay){ $('#fullscreen').removeClass('zoomIn').addClass('zoomOut');
+      hideDelay = false;
+       setTimeout(function(){
+            $('#fullscreen').modal('hide'); $('#fullscreen').removeClass('zoomOut').addClass('zoomIn');
+            $(".pushback").css("transform","scale3d(1,1,1)");
+            $(".pushback").css("-webkit-transform","scale3d(1,1,1)");
+          },700);
+          return false;
+      }
+      hideDelay = true;
+      return true;
+    });
+    $(".dragscroll").mousedown(function(){
+        $(".project-details").css("cursor","-webkit-grabbing");
+    });
+    $(".dragscroll").mouseup(function(){
+        $(".project-details").css("cursor","-webkit-grab");
     });
 });
