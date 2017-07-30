@@ -259,6 +259,10 @@ body{
     margin: 25px auto;
 }
 
+.zoomIn, zoomOut{
+    animation-duration: 0.6s !important;
+}
+
 .code{
     margin-top: 25px;
 }
@@ -267,6 +271,32 @@ body{
     cursor: pointer;
     text-decoration: none;
     color: greenyellow;
+}
+
+ /* Tooltip */
+.code a + .tooltip > .tooltip-inner {
+    background-color: #73AD21 !important; 
+    color: #FFFFFF !important; 
+    border: 1px solid green !important;; 
+    /*      padding: 15px !important;;*/
+    font-size: 14px !important;;
+}
+
+/* Tooltip on top */
+.code a + .tooltip.top > .tooltip-arrow {
+    border-top: 5px solid #73AD21;
+}
+/* Tooltip on bottom */
+.code a + .tooltip.bottom > .tooltip-arrow {
+    border-bottom: 5px solid #73AD21;
+}
+/* Tooltip on left */
+.code a + .tooltip.left > .tooltip-arrow {
+    border-left: 5px solid #73AD21;
+}
+/* Tooltip on right */
+.code a + .tooltip.right > .tooltip-arrow {
+    border-right: 5px solid #73AD21;
 }
 
 @media screen and (min-width:356px) and (max-width:410px){
