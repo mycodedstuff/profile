@@ -65,7 +65,7 @@ function animateHexagon(event){
 
 function shrinkHexagon(element){
     $(element).find(".hexagon").animate({
-        width: "90px",
+        width: "110px",
         height: "120px"
     },{
         duration: 0,
