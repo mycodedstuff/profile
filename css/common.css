@@ -26,7 +26,6 @@ nav{
 
 /* The side navigation menu */
 .sidenav {
-    height: auto; 
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed !important; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -238,7 +237,7 @@ nav{
 }
 
 #social-container{
-    position: fixed;
+    position: absolute;
     margin-left: 80px;
     overflow: hidden;
     width: 0px;

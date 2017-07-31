@@ -179,6 +179,19 @@ textarea{
     z-index: 999;
 }
 
+@media screen and (min-width:768px) and (max-width:1180px){
+    .tooltips span:after {
+        top: 100%;
+        right: 50%;
+        margin-top: -5px;
+        transform: rotate(-90deg);
+    }
+    .mail-id:hover.tooltips span {
+        left: 25%;
+        top: -20px;
+    }
+}
+
 @media screen and (min-width:400px) and (max-width:660px){
     .tooltips span:after {
         top: 100%;

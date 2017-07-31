@@ -49,11 +49,11 @@ body{
 }
 
 .face:hover{
-    transform: scale(1.085);
-    -o-transform: scale(1.085);
-    -ms-transform: scale(1.085);
-    -webkit-transform: scale(1.085);
-    -moz-transform: scale(1.085);
+    transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
 }
 
 .navbar-toggle label{
@@ -69,7 +69,7 @@ body{
 }
 
 .about{
-    height: 60vh;
+    height: 66vh;
     width: 100%;
     text-align: center;
     border-top: 10px solid white;
@@ -85,10 +85,7 @@ body{
     text-align: center;
     border-radius: 30px;
     color: white;
-    height: 52vh;
-}
-
-.inner{
+    height: 58vh;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -209,4 +206,16 @@ body{
 
 .footer a{
     margin-left: 20px;
+}
+
+@media screen and (min-width:500px) and (max-width:750px){
+    .inner h2{
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (max-width:500px){
+    .inner h2{
+        font-size: 1.5em;
+    }
 }

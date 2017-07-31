@@ -223,7 +223,10 @@ h3{
 .footer{
     text-align: center;
     width: 100%;
-    background-color: black;
+    background-color: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6));
+    background-color: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6));
+    background-color: -moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6));
+    background-color: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6));
     color: white;
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -276,7 +279,7 @@ h3{
     background: black;
     color: white;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
 }
