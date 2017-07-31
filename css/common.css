@@ -222,6 +222,9 @@ nav{
     transition: 1s;
     margin-top: 20px;
     width: 80px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
 }
 
 .social{
@@ -241,6 +244,9 @@ nav{
     margin-left: 80px;
     overflow: hidden;
     width: 0px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
 }
 
 #myName p{
