@@ -18,7 +18,7 @@ function followToggle(){
     }
     else{
         $("#follow").animate({width: "80px"},{duration: 0, queue: false, easing: "linear"});
-        $("#social-container").animate({width: "0px"},{duration: 900, queue: false, easing: "swing"});
+        $("#social-container").animate({width: "0px"},{duration: 0, queue: false, easing: "swing"});
     }
 }
 
