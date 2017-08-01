@@ -1,6 +1,9 @@
 body{
     position: static;
-    background: url(../images/work.jpg) center center fixed no-repeat;
+    background: url(../images/work.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     overflow: hidden;
     width: 100%;

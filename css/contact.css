@@ -1,5 +1,8 @@
 body{
-    background: url(../images/contact-wallpaper.png) center center fixed no-repeat;
+    background: url(../images/contact-wallpaper.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     width: 100%;
     color: white;
