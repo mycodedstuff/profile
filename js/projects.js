@@ -92,6 +92,11 @@ function expandHexagon(element){
 $(function(){
     array = $(".projects").find(".project-pane");
     $('[data-toggle="tooltip"]').tooltip();
+    $(document).on('shown.bs.tooltip', function (e) {
+        setTimeout(function () {
+            $(e.target).tooltip('hide');
+        }, 2000);
+    });
     $(".project-pane").click(function(event){
         $('#myCarousel').carousel("pause").removeData();
         $('#fullscreen-carousel').carousel("pause").removeData();

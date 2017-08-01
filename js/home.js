@@ -1,5 +1,5 @@
 $(function(){
-    var timeout = 3000;
+    var timeout = 4000;
     var cookie = document.cookie;
     if(cookie.includes("home_loaded=true")){
         timeout = 0;
