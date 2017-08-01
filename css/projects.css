@@ -1,5 +1,5 @@
 body{
-    background: url(../images/rainbow.png) center center fixed no-repeat;
+    background: url(../images/project-background.jpg) center center fixed no-repeat;
     background-size: cover;
     margin: 0;
     overflow-x: hidden !important;
@@ -29,35 +29,36 @@ body{
 }
 
 .hexagon {
-    background-size: cover !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    width: 200px;
-    height: 230px;
-    overflow: hidden;
-    -webkit-mask-image: url(../images/project_image_mask.jpg);
-    -webkit-mask-size: 100%;
-    -webkit-mask-repeat: no-repeat;
     text-align: center;
     margin: 0 auto;
     transition: .6s;
+    mask: url("../images/project_image_mask.jpg");
+    -webkit-mask-box-image: url("../images/project_image_mask.jpg");
+    width: 200px;
+    height: 230px;
+    margin-bottom: 5px;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.drop-shadow{
+    -webkit-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+    -moz-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+    -ms-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+    -o-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
 }
 
 .cpp{
-    background: url(../images/c++.png) center center no-repeat;
+    background: url(../images/c++.png);
 }
 
 .java{
-    background: url(../images/core-java.png) center center no-repeat;
-}
-
-.python{
-    background: url(../images/python.png) center center no-repeat;
+    background: url(../images/core-java.png);
 }
 
 .batch{
-    background: url(../images/batch.png) center center no-repeat;
+    background: url(../images/batch.png);
 }
 
 .project-pane{
@@ -79,7 +80,7 @@ body{
     margin: 15vh auto 0px auto;
     width: 90%;
     text-align: center;
-    position: sticky;
+/*    position: sticky;*/
 }
 
 .projects a{
@@ -93,10 +94,11 @@ body{
     color: white;
     font-size: 112%;
     margin-bottom: 5px;
+    font-family: "Segoe Print"
 }
 
 .project-details{
-    position: sticky;
+/*    position: sticky;*/
     overflow: hidden;
     background: rgba(0,0,0,0.4);
     display: none;
@@ -124,13 +126,14 @@ body{
     font-size: 2.2em;
     text-align: center;
     margin-bottom: 20px;
+    font-family: "Segoe Print";
+    letter-spacing: 2px;
 }
 
 .project-content{
     width: 90%;
     margin: 0 auto;
     color: white;
-    cursor: grab;
 }
 
 .highlight-project{
@@ -143,7 +146,7 @@ body{
     cursor: pointer;
     color: red;
     font-size: 2.5em;
-    right: 2%;
+    right: 7%;
     padding: 0;
 }
 
@@ -167,20 +170,6 @@ body{
 
 .footer{
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 3px;
-    text-align: center;
-    color: white;
-}
-
-.footer p{
-    margin-top: 10px;
-}
-
-.footer a{
-    margin-left: 20px;
 }
 
 .caption{
@@ -193,6 +182,8 @@ body{
 
 .caption h2{
     font-size: 3em;
+    letter-spacing: 2px;
+    font-family: "Segoe Print";
 }
 
 .screenshots h3{
@@ -255,7 +246,7 @@ body{
     background-position: center center !important;
     background-repeat: no-repeat !important;
     width: 90%;
-    min-height: 60vh;
+    min-height: 63vh;
     margin: 25px auto;
 }
 
@@ -301,13 +292,13 @@ body{
 
 @media screen and (min-width:356px) and (max-width:410px){
     .caption h2{
-        font-size: 2.4em;
+        font-size: 2.2em;
     }
 }
 
 @media screen and (max-width:356px){
     .caption h2{
-        font-size: 2.2em;
+        font-size: 1.8em;
     }
 }
 
@@ -346,7 +337,7 @@ body{
         height: 60vh;
     }
     #fullscreen-carousel .carousel-inner .item div{
-        min-height: 50vh;
+        min-height: 53vh;
     }
 }
 
@@ -355,7 +346,7 @@ body{
         height: 40vh;
     }
     #fullscreen-carousel .carousel-inner .item div{
-        min-height: 30vh;
+        min-height: 33vh;
     }
     #fullscreen{
         margin-top: 120px;

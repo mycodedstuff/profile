@@ -112,17 +112,6 @@ nav{
     cursor: pointer;
 }
 
-
-.blink{
-    font-size: 45px;
-    animation: blink 1s infinite;
-}
-
-/* The typewriter cursor effect */
-@keyframes blink{
-    to {opacity: .0;}
-}
-
 .social .link {
     display: inline-block;
     vertical-align: middle;
@@ -131,7 +120,6 @@ nav{
     height: 80px;
     border-radius: 50%;
     border: 2px dashed white;
-    background-clip: content-box;
     padding: 10px;
     -webkit-transition: .5s;
     -moz-transition: .5s;
@@ -249,44 +237,6 @@ nav{
     -moz-transition: 1s;
 }
 
-#myName p{
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: type 1.5s steps(40, end); 
-}
-
-#myName p:nth-child(2){
-    animation: type2 2s steps(20, end);
-}
-
-
-@keyframes type{ 
-    from { 
-        width: 0;
-        margin-left: 50%;
-    } 
-} 
-
-@keyframes type2{
-    0%{
-        width: 0;
-        margin-left: 50%;
-    }
-    50%{
-        width: 0;
-        margin-left: 50%;
-    }
-    75%{
-        width: 50%;
-        margin-left: 25%;
-    }
-    100%{ 
-        width: 100%;
-        margin-left: 0%;
-    } 
-}
-
 .nav-profile{
     background: url(../images/me2.png) center center no-repeat;
     background-size: cover;
@@ -344,4 +294,123 @@ nav{
 
 .active{
     color: white !important;
+}
+
+.footer{
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    color: white;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    padding: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.footer .col-sm-6{
+    padding: 0;
+}
+
+.footer-left{
+    min-height: 240px;
+    margin-top: 40px;
+    text-align: left;
+    padding-right: 80px;
+    padding-left: 40px;
+}
+
+.footer-left p, .footer-right p{
+    line-height: 27px;
+}
+
+.footer-left a:first-child{
+    margin-right: 10px;
+}
+
+.footer-left a:nth-child(2){
+    margin: 5px 10px;
+}
+
+.footer .container-fluid{
+    margin-bottom: 30px;
+}
+
+.footer-right{
+    min-height: 240px;
+    text-align: left;
+    margin-top: 40px;
+    padding-left: 40px;
+    border-left: 4px solid white;
+    padding-right: 10px;
+    width: 95%;
+}
+
+.credit{
+    padding-bottom: 10px;
+}
+
+.credit a{
+    display: inline-block;
+}
+
+.email{
+    cursor: pointer;
+}
+
+.social-media, .credit{
+    margin-top: 5px;
+}
+
+.social-media a, .credit a{
+    color: rgb(149, 165, 166);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.github-profile a{
+    cursor: pointer;
+    text-decoration: none;
+    color: yellow;
+}
+
+.social-media a, .credit a{
+    margin-right: 15px;
+}
+
+.social-media a:hover, .credit a:hover{
+    color: white;
+}
+
+.github-profile a:hover{
+    color: greenyellow;
+}
+
+.github-profile{
+    margin-top: 10px;
+}
+
+@media screen and (min-width:1089px) and (max-width:1149px){
+    .footer-left{
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width:1089px){
+    .footer-left{
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:940px){
+/*
+    .footer-left a:nth-child(2){
+        margin-left: 0px;
+    }
+*/
 }

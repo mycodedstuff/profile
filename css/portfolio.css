@@ -1,12 +1,12 @@
-#mainPage{
-    overflow: hidden;
-}
-
 body{
-    background: url(../images/portfolio_background.jpg) center center fixed no-repeat;
+    background: url(../images/portfolio-background.jpg) center center no-repeat fixed;
     background-size: cover;
     overflow-y: scroll;
     padding: 0 !important;
+}
+
+#mainPage{
+    overflow: hidden;
 }
 
 .modal-open{
@@ -14,9 +14,9 @@ body{
 }
 
 .border-circle{
-    margin: 20px auto 20px auto;
-    width: 200px;;
-    height: 200px;
+    margin: 10px auto 20px auto;
+    width: 220px;
+    height: 220px;
     text-align: center;
     border: 10px dashed white;
     border-style: solid;
@@ -34,8 +34,8 @@ body{
     transform: 1.2s;
     text-align: center;
     cursor: pointer;
-    height: 160px;
-    width: 160px;
+    height: 180px;
+    width: 180px;
     margin: 10px auto;
     border: 10px solid yellow;
     border-radius: 100%;
@@ -61,8 +61,7 @@ body{
 }
 
 .transparent-layer{
-    background: rgba(0,0,0,0.5) fixed center center;
-    background-size: cover;
+    background: rgba(0,0,0,0.2);
     margin-top: 0;
     padding: 0;
     width: 100%;
@@ -195,17 +194,6 @@ body{
 
 .android{
     background: url(../images/android.png);
-}
-
-.footer{
-    margin-top: 20px;
-    padding: 3px;
-    text-align: center;
-    color: white;
-}
-
-.footer a{
-    margin-left: 20px;
 }
 
 @media screen and (min-width:500px) and (max-width:750px){
