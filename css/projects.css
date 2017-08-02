@@ -1,8 +1,5 @@
 body{
-    background: url(../images/project-background.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: url(../images/project-background.jpg) center center fixed no-repeat;
     background-size: cover;
     margin: 0;
     overflow-x: hidden !important;
@@ -173,6 +170,8 @@ body{
 
 .footer{
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    background: -moz-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
 }
 
 .caption{

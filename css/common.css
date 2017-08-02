@@ -1,11 +1,10 @@
 html{
     height: 100vh;
+    min-height: 100%;
 }
 
 body{
     overflow-x: hidden;
-    background-size: 100% auto;
-    -webkit-background-size: cover;
 }
 
 ::selection{
@@ -30,24 +29,21 @@ nav{
     height: 100%;
 }
 
-/* The side navigation menu */
 .sidenav {
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed !important; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    width: 0;
+    position: fixed !important;
+    z-index: 1;
     top: 0;
     left: 0;
     bottom: 0;
-    background: linear-gradient(to left,rgba(0,0,0,0.5),rgba(0,0,0,0.9)); /* Black*/
-    background: -webkit-linear-gradient(to left,rgba(0,0,0,0.5),rgba(0,0,0,0.9)); /* Black*/
-    background: -moz-linear-gradient(to left,rgba(0,0,0,0.5),rgba(0,0,0,0.9)); /* Black*/
-    background: -o-linear-gradient(to left,rgba(0,0,0,0.5),rgba(0,0,0,0.9)); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    padding-top: 60px; /* Place content 60px from the top */
+    background: linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));
+    background: -webkit-linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));
+    background: -moz-linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));
+    background: -o-linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));
+    overflow-x: hidden;
+    padding-top: 60px;
 }
 
-/* The navigation menu links */
 .sidenav a {
     height: 60px;
     line-height: 50px;
@@ -60,7 +56,6 @@ nav{
     display: block;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }
@@ -79,7 +74,6 @@ nav{
     margin-left: 12px;
 }
 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -184,16 +178,16 @@ nav{
 .followtext{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
     cursor: pointer;
     border: 1px solid black;
     border-left: 2px solid white;
     padding: 5px;
     word-wrap: break-word;
     float: left;
-    width: 80px;
+    width: 90px;
     font-size: 13px;
     height: 52px;
     text-align: center;
@@ -202,6 +196,7 @@ nav{
 .followtext a{
     color: white;
     text-decoration: none;
+    letter-spacing: 1.2px;
 }
 
 .followtext:hover{
@@ -216,7 +211,7 @@ nav{
     z-index: 200;
     transition: 1s;
     margin-top: 20px;
-    width: 80px;
+    width: 90px;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
@@ -236,7 +231,7 @@ nav{
 
 #social-container{
     position: absolute;
-    margin-left: 80px;
+    margin-left: 90px;
     overflow: hidden;
     width: 0px;
     transition: 1s;
@@ -307,6 +302,9 @@ nav{
     text-align: center;
     width: 100%;
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    background: -moz-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    background: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
     color: white;
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -336,12 +334,16 @@ nav{
     line-height: 27px;
 }
 
-.footer-left a:first-child{
+.footer-left p:last-child{
+    margin-top: 10px;
+}
+
+.footer-left p:last-child *{
     margin-right: 10px;
 }
 
-.footer-left a:nth-child(2){
-    margin: 5px 10px;
+.footer-left p:last-child a{
+    margin-top: 5px;
 }
 
 .footer .container-fluid{
@@ -414,26 +416,19 @@ nav{
     }
 }
 
-@media screen and (max-width:940px){
-/*
-    .footer-left a:nth-child(2){
-        margin-left: 0px;
-    }
-*/
-}
-
 @media screen and (max-width:450px){
     #nav-toggle{
-        width:60px;
+        width: 60px;
         padding: 6px;
-        
+        margin-top: 15px;
     }
     #nav-toggle label {
         font-size: .8em !important;
     }
     .bar{
         height: 5px;
-        margin: 6px auto;
+        margin: 8px auto;
+
     }
     .followpane{
         width: 70px;
@@ -443,5 +438,11 @@ nav{
         width: 70px;
         font-size: .8em;
         height: 46px;
+    }
+    .followtext a{
+        letter-spacing: 0.2px;
+    }
+    #social-container{
+        margin-left: 70px;
     }
 }

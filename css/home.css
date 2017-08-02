@@ -1,9 +1,6 @@
 body{
     position: static;
-    background: url(../images/work.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: url(../images/work.jpg) center center fixed no-repeat;
     background-size: cover;
     overflow: hidden;
     width: 100%;
@@ -20,7 +17,7 @@ body{
 .transparent-layer{
     width: 100%;
     padding: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.4);
     min-height: 100vh;
 }
 
@@ -71,23 +68,18 @@ body{
 .name{
     cursor: default;
     letter-spacing: 4px;
-    margin: 15px auto 16px auto;
+    margin: 16px auto;
     color: white;
     background: rgba(0,0,0,0.4);
     padding: 5px;
     text-align: center;
     font-size: 3em;
-    border: 1px solid black;
     border-radius: 25px;
-    transition: 0.4s;
-    -o-transition: 0.4s;
-    -wekit-transition: 0.4s;
-    -moz-transition: 0.4s;
 }
 
 .name:hover{
-    margin-bottom: 15px;
-    border-bottom: 2px solid white;
+    margin-bottom: 14px;
+    border-bottom: 2px solid yellowgreen;
 }
 
 #myName p{
@@ -219,11 +211,11 @@ body{
 }
 
 .diamond:hover {
-    -moz-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    -o-transform: scale(1.03);
-    -webkit-transform: scale(1.03);
-    transform: scale(1.03);
+    transform: translate(0,-2%);
+    -webkit-transform: translate(0,-2%);
+    -moz-transform: translate(0,-2%);
+    -ms-transform: translate(0,-2%);
+    -o-transform: translate(0,-2%);
 }
 
 #content2{
