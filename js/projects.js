@@ -9,6 +9,7 @@ var callingHexagon;
 var tag;
 var title;
 var hideDelay = true;
+var closingProject = false;
 function initialize(){
     initialProject = {
         marginTop: $(".projects").css("margin-top"),
@@ -54,6 +55,7 @@ function animateHexagon(event){
                 $(".hexagon").removeAttr("style");
                 $(".project_title").removeAttr("style");
             });
+            closingProject = false;
         },1300);
     }
     $.each(array,function(i,e){
@@ -98,46 +100,49 @@ $(function(){
         }, 2000);
     });
     $(".project-pane").click(function(event){
-        $('#myCarousel').carousel("pause").removeData();
-        $('#fullscreen-carousel').carousel("pause").removeData();
-        $('.carousel').carousel({interval: 1800,pause: "false"});
-        callingHexagon = event.currentTarget;
-        tag = $(callingHexagon).data("title");
-        animateHexagon("shrink");
-        $.each(array,function(i,e){
-            $(e).removeClass("highlight-project");
-        });
-        $(this).addClass("highlight-project");
-        $(".description .content").load("project_details.txt #"+tag);
-        $(".carousel-inner").load("project_shots.txt #"+tag, function(){
-            $(".carousel-inner").html($(".carousel-inner #"+tag).html());
-            $('#fullscreen-carousel').carousel(0);
-            $('#myCarousel').carousel(0);
-            $('#myCarousel').carousel("cycle");
-            $('#fullscreen-carousel').carousel("cycle");
-        });
-        $.ajax({
-            url: "project_links.txt",
-            cache: false,
-            dataType: "html",
-            type: "get",
-            success: function(data){
-                var link = $(data).find("#"+tag).text();
-                if(link == ""){
-                    $(".code a").tooltip({
-                        title: "This project is not yet uploaded.",
-                        placement: "auto right"
-                    });
-                }else{
-                    $(".code a").tooltip("destroy");
-                    $(".code a").attr("href", link);
+        if(!closingProject){
+            $('#myCarousel').carousel("pause").removeData();
+            $('#fullscreen-carousel').carousel("pause").removeData();
+            $('.carousel').carousel({interval: 1800,pause: "false"});
+            callingHexagon = event.currentTarget;
+            tag = $(callingHexagon).data("title");
+            animateHexagon("shrink");
+            $.each(array,function(i,e){
+                $(e).removeClass("highlight-project");
+            });
+            $(this).addClass("highlight-project");
+            $(".description .content").load("project_details.txt #"+tag);
+            $(".carousel-inner").load("project_shots.txt #"+tag, function(){
+                $(".carousel-inner").html($(".carousel-inner #"+tag).html());
+                $('#fullscreen-carousel').carousel(0);
+                $('#myCarousel').carousel(0);
+                $('#myCarousel').carousel("cycle");
+                $('#fullscreen-carousel').carousel("cycle");
+            });
+            $.ajax({
+                url: "project_links.txt",
+                cache: false,
+                dataType: "html",
+                type: "get",
+                success: function(data){
+                    var link = $(data).find("#"+tag).text();
+                    if(link == ""){
+                        $(".code a").tooltip({
+                            title: "This project is not yet uploaded.",
+                            placement: "auto right"
+                        });
+                    }else{
+                        $(".code a").tooltip("destroy");
+                        $(".code a").attr("href", link);
+                    }
                 }
-            }
-        });
-        title = $(callingHexagon).find(".project_title").text();
-        $(".project-content h2").html(title);
+            });
+            title = $(callingHexagon).find(".project_title").text();
+            $(".project-content h2").html(title);
+        }
     });
     $(".close-project").click(function(){
+        closingProject = true;
         $('#myCarousel').carousel("pause").removeData();
         $('#fullscreen-carousel').carousel("pause").removeData();
         animateHexagon("expand");
