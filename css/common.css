@@ -5,7 +5,7 @@ html{
 body{
     overflow-x: hidden;
     background-size: 100% auto;
-    -webkit-background-size-cover;
+    -webkit-background-size: cover;
 }
 
 ::selection{
