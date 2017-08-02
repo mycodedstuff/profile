@@ -1,10 +1,10 @@
 body{
     position: static;
-    background: url(../images/work.jpg);
+/*     background: url(../images/work.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cover; */
 /*     overflow: hidden; */
     width: 100%;
     text-align: left;
@@ -12,12 +12,20 @@ body{
     padding: 0 !important;
 }
 
+#mainWebpage{
+    background: url(../images/work.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 html{
- height:100vh;
+/*  height:100vh; */
 /*  min-height:100vh; */
  }
 body{
- min-height:100%;
+/*  min-height:100%; */
  }
 
 #mainWebpage{
