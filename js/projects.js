@@ -34,12 +34,12 @@ function initialize(){
 function animateHexagon(event){
     if(event == "shrink"){
         if(!view_mode){initialize();
-            $(".projects").css("overflow-y","scroll").animate({marginTop: "3vh",height: "180px",marginBottom: "20px"},{duration: 600,queue: false,complete: function(){$(".projects").css("max-height","170px");}});
+            $(".projects").css("overflow-y","scroll").animate({marginTop: "3vh",height: "185px",marginBottom: "20px"},{duration: 600,queue: false,complete: function(){$(".projects").css("max-height","185px");}});
             $(".project-details").css("display","block").animate({height: "420px"},{duration: 600, queue: false});
             $(".caption").animate({fontSize: "0.8em"},{duration: 600,queue:false});
-            setTimeout(function(){callingHexagon.parentNode.scrollTop = callingHexagon.offsetTop;},600);
+            setTimeout(function(){callingHexagon.parentNode.scrollTop = callingHexagon.offsetTop - 110;},600);
         }else{
-            callingHexagon.parentNode.scrollTop = callingHexagon.offsetTop;
+            callingHexagon.parentNode.scrollTop = callingHexagon.offsetTop - 110;
         }
         view_mode = true;
     }else{

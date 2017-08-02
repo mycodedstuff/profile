@@ -17,7 +17,7 @@ function followToggle(){
         $("#follow").animate({width: "460px"},{duration: 0, queue: false, easing: "linear"});
     }
     else{
-        $("#follow").animate({width: "80px"},{duration: 0, queue: false, easing: "linear"});
+        $("#follow").animate({width: "80px"},{duration: 0, queue: false, easing: "linear"}).attr("style","");
         $("#social-container").animate({width: "0px"},{duration: 0, queue: false, easing: "swing"});
     }
 }
