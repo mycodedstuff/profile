@@ -2,6 +2,10 @@ body{
     overflow-x: hidden;
 }
 
+html{
+    height:100vh;
+}
+
 ::selection{
     background-color: transparent;
 }
