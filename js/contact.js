@@ -2,7 +2,7 @@ $(function(){
     $("form").submit(function(event){
         event.preventDefault();
         $.ajax({
-            url: "https://formsee.io/singh.aman956@gmail.com", 
+            url: "https://formspree.io/singh.aman956@gmail.com", 
             method: "POST",
             data: {name: $("#name").val(),
                    email: $("#email").val(),
