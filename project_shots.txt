@@ -12,6 +12,11 @@
         <div style="background-image: url(images/Screenshots/adapter4.PNG)"></div>
     </div>
 </div>
+<div id="portfolio">
+    <div class="item active">
+        <div style="background-image: url(images/give-try.png)"></div>
+    </div>
+</div>
 <div id="phonebook">
     <div class="item active">
         <div style="background-image: url(images/Screenshots/phonebook1.PNG)"></div>
