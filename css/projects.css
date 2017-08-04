@@ -58,7 +58,11 @@ body{
 }
 
 .batch{
-    background: url(../images/batch.png);
+    background: url("../images/batch.png");
+}
+
+.web{
+    background: url("../images/web-dev.png");
 }
 
 .project-pane{

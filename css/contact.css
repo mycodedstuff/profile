@@ -62,7 +62,7 @@ body{
     position: absolute;
     display: inline-block;
     right: 5px;
-    top: 115px;
+    top: 120px;
     word-break: keep-all;
     width: 90px;
     text-align: center;
@@ -84,6 +84,24 @@ body{
   position: absolute;
   top: -35px;
   width: 0;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+    }
+    50%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+    }
 }
 
 @-webkit-keyframes hue {

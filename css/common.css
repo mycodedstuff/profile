@@ -1,6 +1,7 @@
 html{
     height: 100vh;
     min-height: 100%;
+    min-width: 100%;
 }
 
 body{
@@ -31,7 +32,7 @@ nav{
 
 .sidenav {
     width: 0;
-    position: fixed !important;
+    position: absolute !important;
     z-index: 1;
     top: 0;
     left: 0;
@@ -94,7 +95,7 @@ nav{
 #nav-toggle{
     width: 70px;
     position: absolute;
-    left: 0;
+    left: 5px;
     display: inline;
     border: 2px solid rgba(255,255,255,.5);
     transition: background-color 0.4s;
@@ -103,6 +104,7 @@ nav{
     -o-transition: background-color 0.4s;
     padding: 9px;
     border-radius: 8px;
+    margin-top: 25px;
 }
 
 .navbar-toggle:hover{
@@ -121,7 +123,7 @@ nav{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 2px dashed white;
+    border: 2px solid white;
     padding: 10px;
     -webkit-transition: .5s;
     -moz-transition: .5s;
@@ -150,29 +152,24 @@ nav{
 .social .link.google-plus {
     background: url(../images/g+.png) center center no-repeat;
     background-color: tomato;
-    color: white;
 }
 
 .social .link.linkedin {
     background: url(../images/linkedin.png) center center no-repeat;
     background-color: #0077B5;
-    color: white;
 }
 
 .social .link.facebook {
     background: url(../images/fb.png) center center no-repeat;
     background-color: #3B5998;
-    color: white;
 }
 .social .link.instagaram {
     background: url(../images/instagram.png) center center no-repeat;
     background-color: #444444;
-    color: white;
 }
 .social .link.twitter {
     background: url(../images/twitter.png) center center no-repeat;
     background-color: #00ACEE;
-    color: white;
 }
 
 .followtext{
@@ -210,7 +207,7 @@ nav{
     right: 0;
     z-index: 200;
     transition: 1s;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 90px;
     transition: 1s;
     -webkit-transition: 1s;
@@ -243,9 +240,8 @@ nav{
     background: url(../images/me2.png) center center no-repeat;
     background-size: cover;
     width: 120px;
-    height: 100px;
-    border: 5px solid tranparent;
-    border-radius: 100%;
+    height: 110px;
+    transform: translate(7%)
 }
 
 .nav-profile-circle{
