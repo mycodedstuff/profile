@@ -16,11 +16,9 @@ function followToggle(){
     if($("#social-container").css("width") == "0px"){
         if($("#follow").css("width") == "90px"){
             follow_width = "460px";
-        }
-        if($("#follow").css("width") == "70px"){
+        }else if($("#follow").css("width") == "70px"){
             follow_width = "450px";
         }
-        console.log(follow_width);
         $("#social-container").animate({width: "380px"},{duration: 0, queue: false, easing: "linear"});
         $("#follow").animate({width: follow_width},{duration: 0, queue: false, easing: "linear"});
     }

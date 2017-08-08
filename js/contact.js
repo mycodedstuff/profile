@@ -1,6 +1,7 @@
 $(function(){
     $("form").submit(function(event){
         event.preventDefault();
+        $(".submit-text").text("Sending...");
         $.ajax({
             url: "https://formspree.io/singh.aman956@gmail.com", 
             method: "POST",
@@ -17,6 +18,7 @@ $(function(){
                     },1000);
                 }});
                 $("form").trigger("reset");
+                $(".submit-text").text("Send");
             },
             error: function(){
                 $(".send-fail").css("display","block").animate({opacity: 1},{duration: 500, complete: function(){
@@ -27,6 +29,7 @@ $(function(){
                     },1000);
                 }});
                 $("form").trigger("reset");
+                $(".submit-text").text("Send");
             }
         });
     });
