@@ -159,6 +159,9 @@ body{
     .blink{
         font-size: 20px;
     }
+    .name{
+        border-radius: 20px;
+    }
 }
 
 @media screen and (min-width:350px) and (max-width: 404px){
@@ -170,6 +173,7 @@ body{
     }
     .name{
         font-size: 2em;
+        border-radius: 20px;
     }
     .border-circle{
         width: 200px;
@@ -195,10 +199,12 @@ body{
     }
     .name{
         font-size: 1.5em;
+        border-radius: 20px;
     }
     .border-circle{
         width: 180px;
         height: 180px;
+        margin-bottom: 5px;
     }
     .face{
         width: 140px;

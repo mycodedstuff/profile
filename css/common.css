@@ -32,7 +32,7 @@ nav{
 
 .sidenav {
     width: 0;
-    position: absolute !important;
+    position: fixed !important;
     z-index: 1;
     top: 0;
     left: 0;
@@ -127,6 +127,8 @@ nav{
     padding: 10px;
     -webkit-transition: .5s;
     -moz-transition: .5s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
     transition: .5s;
     color: #D7D0BE;
     margin-left: 15px;
@@ -234,6 +236,7 @@ nav{
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
+    -webkit-filter: drop-shadow(0px 0px 8px black);
 }
 
 .nav-profile{
@@ -241,7 +244,7 @@ nav{
     background-size: cover;
     width: 120px;
     height: 110px;
-    transform: translate(7%)
+    transform: translate(7%);
 }
 
 .nav-profile-circle{
@@ -251,6 +254,7 @@ nav{
     margin-left: 40px;
     border-radius: 100%;
     margin-bottom: 50px;
+    box-shadow: 0px 0px 40px black;
 }
 
 #socialclosebtn{
@@ -292,6 +296,7 @@ nav{
 
 .active{
     color: white !important;
+    text-shadow: 0px 0px 20px;
 }
 
 .footer{

@@ -146,12 +146,12 @@ body{
 
 .close-project{
     position: absolute;
-    display: block;
     cursor: pointer;
     color: red;
     font-size: 2.5em;
     right: 7%;
     padding: 0;
+    justify-content: flex-end;
 }
 
 .close-project:hover{
