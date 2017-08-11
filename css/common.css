@@ -240,11 +240,11 @@ nav{
 }
 
 .nav-profile{
-    background: url(../images/me2.png) center center no-repeat;
+    background: url(../images/me3.jpg) center center no-repeat;
     background-size: cover;
     width: 120px;
     height: 110px;
-    transform: translate(7%);
+    transform:  translate(-2%);
 }
 
 .nav-profile-circle{
