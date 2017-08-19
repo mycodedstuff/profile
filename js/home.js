@@ -1,5 +1,9 @@
 window.onload = function(){
-    $(".back").slideUp("slow");
-    $("body").css("overflow-y","auto");
     $("#mainWebpage").fadeIn("slow","linear");
+    $(".arrow-down").click(function(e){
+        e.preventDefault();
+        $("html, body").stop().animate({
+            scrollTop: $("#contents").offset().top - 35
+        },1000);
+    });
 };
