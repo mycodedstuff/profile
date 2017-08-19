@@ -206,6 +206,9 @@ body{
     #myName p:nth-child(2){
         font-size: 1.2em;
     }
+    .face{
+        margin-top: 18vh;
+    }
 }
 
 @media screen and (max-width:465px){
@@ -220,6 +223,9 @@ body{
     }
     #contents div p{
         width: 90%;
+    }
+    .face{
+        margin-top: 15vh;
     }
 }
 
