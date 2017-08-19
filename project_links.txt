@@ -1,5 +1,5 @@
 <div>
 <div id="portfolio">https://github.com/mycodedstuff/profile</div>
-<div id="adapter">https://github.com/mycodedstuff/AdapterStatusCheck</div>
+<div id="adapter">https://github.com/mycodedstuff/AdapterStatusCheck<div>
 <div id="shopping">https://github.com/mycodedstuff/ShoppingMallAdministration</div>
 </div>
