@@ -16,36 +16,21 @@ body{
     background-color: transparent;
 }
 
-nav{
-    background: linear-gradient(to bottom, #555555 0%, #222222 100%);
-    background: -moz-linear-gradient(to bottom, #555555 0%, #222222 100%);
-    background: -o-linear-gradient(to bottom, #555555 0%, #222222 100%);
-    background: -webkit-linear-gradient(to bottom, #555555 0%, #222222 100%);
-}
-
-.navbar-fixed-left {
-    width: 80px;
-    position: fixed;
-    border-radius: 0;
-    height: 100%;
-}
-
-.sidenav {
+.sidenav{
     width: 0;
     position: fixed !important;
     z-index: 1;
     top: 0;
     left: 0;
     bottom: 0;
-    background: linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));
-    background: -webkit-linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));
-    background: -moz-linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));
-    background: -o-linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));
     overflow-x: hidden;
     padding-top: 60px;
+    background-color: rgb(33,33,33);
+    min-height: 100vh;
+    height: 100vh;
 }
 
-.sidenav a {
+.sidenav a{
     height: 60px;
     line-height: 50px;
     padding: 8px 8px 10px 35px;
@@ -84,159 +69,32 @@ nav{
     cursor: pointer;
 }
 
-.bar {
+.bar{
     display: block;
-    width: 80%;
-    height: 6px;
-    background-color: rgba(52, 152, 219,1.0);
+    width: 70%;
+    height: 4px;
+    background-color: rgba(255, 255, 255,1.0);
     margin: 8px auto;
+    transition: 0.3s;
+    border-radius: 50px;
 }
 
 #nav-toggle{
-    width: 70px;
+    width: 50px;
     position: absolute;
-    left: 5px;
-    display: inline;
-    border: 2px solid rgba(255,255,255,.5);
-    transition: background-color 0.4s;
-    -webkit-transition: background-color 0.4s;
-    -moz-transition: background-color 0.4s;
-    -o-transition: background-color 0.4s;
-    padding: 9px;
-    border-radius: 8px;
+    left: 15px;
     margin-top: 25px;
-}
-
-.navbar-toggle:hover{
-    background-color: rgba(0,0,0,0.4);
-}
-
-.navbar-toggle label{
-    color: white;
-    cursor: pointer;
-}
-
-.social .link {
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid white;
-    padding: 10px;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    transition: .5s;
-    color: #D7D0BE;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.social .link span {
+    padding: 0;
     display: block;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
 }
 
-.social .link:hover {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
+#nav-toggle:hover .bar:nth-child(1){
+    transform: translate(70%,160%) rotate(45deg);
+    width: 30%;
 }
-
-.social .link.google-plus {
-    background: url(../images/g+.png) center center no-repeat;
-    background-color: tomato;
-}
-
-.social .link.linkedin {
-    background: url(../images/linkedin.png) center center no-repeat;
-    background-color: #0077B5;
-}
-
-.social .link.facebook {
-    background: url(../images/fb.png) center center no-repeat;
-    background-color: #3B5998;
-}
-.social .link.instagaram {
-    background: url(../images/instagram.png) center center no-repeat;
-    background-color: #444444;
-}
-.social .link.twitter {
-    background: url(../images/twitter.png) center center no-repeat;
-    background-color: #00ACEE;
-}
-
-.followtext{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background: #000000;
-    background: -webkit-linear-gradient(to right, #434343, #000000);
-    background: linear-gradient(to right, #434343, #000000);
-    cursor: pointer;
-    border: 1px solid black;
-    border-left: 2px solid white;
-    padding: 5px;
-    word-wrap: break-word;
-    float: left;
-    width: 90px;
-    font-size: 13px;
-    height: 52px;
-    text-align: center;
-}
-
-.followtext a{
-    color: white;
-    text-decoration: none;
-    letter-spacing: 1.2px;
-}
-
-.followtext:hover{
-    background: -webkit-linear-gradient(to right, #414345, #232526);
-    background: linear-gradient(to right, #414345, #232526); 
-    background: -moz-linear-gradient(to right, #414345, #232526);
-}
-
-.followpane{
-    position: absolute;
-    right: 0;
-    z-index: 200;
-    transition: 1s;
-    margin-top: 30px;
-    width: 90px;
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-}
-
-.social{
-    width: 379px;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid white;
-    border-bottom-left-radius: 10px;
-    overflow: hidden;
-    background: -webkit-linear-gradient(to right, rgba(67,67,67,0.5), rgba(30,30,30,0.7));
-    background: linear-gradient(to right, rgba(67,67,67,0.5), rgba(30,30,30,0.7));
-    background: -moz-linear-gradient(to right, rgba(67,67,67,0.5), rgba(30,30,30,0.7));
-}
-
-#social-container{
-    position: absolute;
-    margin-left: 90px;
-    overflow: hidden;
-    width: 0px;
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -webkit-filter: drop-shadow(0px 0px 8px black);
+#nav-toggle:hover .bar:nth-child(3){
+    transform: translate(70%,-160%) rotate(-45deg);
+    width: 30%;
 }
 
 .nav-profile{
@@ -254,22 +112,6 @@ nav{
     margin-left: 40px;
     border-radius: 100%;
     margin-bottom: 50px;
-    box-shadow: 0px 0px 40px black;
-}
-
-#socialclosebtn{
-    position: absolute;
-    top: 0px;
-    cursor: pointer;
-    text-decoration: none;
-    width: 30px;
-    height: 30px;
-    font-size: 2em;
-    margin-left: 40px;
-}
-
-.credits{
-    display: none;
 }
 
 *::-webkit-scrollbar-track
@@ -296,16 +138,13 @@ nav{
 
 .active{
     color: white !important;
-    text-shadow: 0px 0px 20px;
+    text-shadow: 0px 0px 10px;
 }
 
 .footer{
     text-align: center;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
-    background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
-    background: -moz-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
-    background: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    background: rgb(33,33,33);
     color: white;
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -423,27 +262,92 @@ nav{
         padding: 6px;
         margin-top: 15px;
     }
-    #nav-toggle label {
-        font-size: .8em !important;
-    }
     .bar{
         height: 5px;
         margin: 8px auto;
 
     }
-    .followpane{
-        width: 70px;
-        margin-top: 20px;
-    }
-    .followtext{
-        width: 70px;
-        font-size: .8em;
-        height: 46px;
-    }
-    .followtext a{
-        letter-spacing: 0.2px;
-    }
-    #social-container{
-        margin-left: 70px;
-    }
+}
+
+.social-bars{
+    right: 0;
+    top: 32vh;
+    position: fixed;
+    z-index: 1000;
+}
+
+.social-bars div{
+    height: 50px;
+    width: 50px;
+    transition: 0.4s;
+}
+
+.social-bars div a{
+    display: block;
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.fb-bar{
+    background-color: rgb(61, 90, 152);
+    padding: 7px;
+    border-top-left-radius: 10px;
+}
+
+.fb-bar a{
+    background: url(../images/fb-icon.png);
+    height: 40px;
+    width: 40px;
+}
+
+.gplus-bar{
+    background-color: rgb(255,87,34);
+    padding: 9px;
+}
+
+.gplus-bar a{
+    background: url(../images/google-plus.png);
+    height: 35px;
+    width: 35px;
+}
+
+.insta-bar{
+    background-color: rgb(66,66,66);
+    padding: 7px;
+}
+
+.insta-bar a{
+    display: block;
+    background: url(../images/insta.png);
+    height: 40px;
+    width: 40px;
+}
+
+.linked-bar{
+    background-color: rgb(25,118,210);
+    padding: 7px;
+}
+
+.linked-bar a{
+    background: url(../images/in.png);
+    height: 40px;
+    width: 40px;
+}
+
+.twitter-bar{
+    background-color: rgb(3,169,244);
+    padding: 11px;
+    border-bottom-left-radius: 10px;
+}
+
+.twitter-bar a{
+    background: url(../images/twitter-logo.png);
+    height: 30px;
+    width: 30px;
+}
+
+.social-bars div:hover{
+    margin-left: -10px;    
+    width: 60px;
 }

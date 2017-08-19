@@ -1,27 +1,12 @@
 body{
-    background: url(../images/portfolio-background.jpg) center center no-repeat fixed;
-    background-size: cover;
-    overflow-y: scroll;
     padding: 0 !important;
 }
 
 #mainPage{
     overflow: hidden;
-}
-
-.border-circle{
-    margin: 10px auto 20px auto;
-    width: 220px;
-    height: 220px;
-    text-align: center;
-    border: 10px dashed white;
-    border-style: solid;
-    border-radius: 100%;
-    animation: outerspin 1s infinite linear;
-    box-shadow: 15px 10px 15px 2px rgba(0,0,0,0.5);
-    transition: transform 1.2s;
-    -webkit-transition: transform 1.2s;
-    -moz-transition: transform 1.2s;
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC 100vh);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #5B86E5, #36D1DC 100vh); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .face{
@@ -30,10 +15,11 @@ body{
     transform: 1.2s;
     text-align: center;
     cursor: pointer;
-    height: 180px;
-    width: 180px;
-    margin: 10px auto;
-    border: 10px solid yellow;
+    height: 240px;
+    width: 240px;
+    margin: 30px auto;
+    margin-top: 24vh;
+    border: 10px solid white;
     border-radius: 100%;
     background: url(../images/me3.jpg) center center no-repeat;
     background-size: cover;
@@ -52,9 +38,6 @@ body{
     -moz-transform: scale(1.1);
 }
 
-.navbar-toggle label{
-    font-size: 12px;
-}
 
 .transparent-layer{
     background: rgba(0,0,0,0.2);
@@ -63,84 +46,13 @@ body{
     width: 100%;
 }
 
-.about{
-    height: 66vh;
-    width: 100%;
-    text-align: center;
-    border-top: 10px solid white;
-    border-bottom: 10px solid white;
-    border-radius: 50px;
-}
-
-.inner{
-    background: rgba(0,0,0,0.3);
-    margin: 20px;
-    text-align: center;
-    border-radius: 30px;
-    color: white;
-    height: 58vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-.inner h2{
-    width: 95%;
-    margin: 0 auto;
-    line-height: 50px;
-}
-
-.scroll{
-    overflow: hidden;
-}
-
-.sidenav{
-    background: linear-gradient(to left,rgba(0,0,0,0.2),rgba(0,0,0,0.8));
-    background: -webkit-linear-gradient(to left,rgba(0,0,0,0.2),rgba(0,0,0,0.8));
-    background: -moz-linear-gradient(to left,rgba(0,0,0,0.2),rgba(0,0,0,0.8));
-    background: -o-linear-gradient(to left,rgba(0,0,0,0.2),rgba(0,0,0,0.8));
-}
-
-.inner::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;
-}
-
-.inner::-webkit-scrollbar
-{
-    margin: 5px 0px;
-    border-radius: 10px;
-	width: 12px;
-	background-color: #F5F5F5;
-}
-
-.inner::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: yellow;
-}
-
 #googleMaps{
-    margin: 5px 20px;
-    height: 200px;
+    margin-top: 15px;
+    height: 300px;
     border: 2px solid transparent;
     border-radius: 10px;
-}
-
-.linkedInLogo{
-    display: inline-block;
-    background: url(../images/linkedinlogo.png) center center no-repeat;
-    background-size: 100%;
-    width: 100px;
-    height: 23px;
-}
-
-.known-lang, .ongoing{
-    margin: 40px auto 60px auto;
-    text-align: center;
-    max-width: 1000px;
+/*    width: 50%;*/
+    visibility: hidden;
 }
 
 .hexagon{
@@ -164,7 +76,7 @@ body{
 }
 
 .java{
-    background: url(../images/java.png);
+    background: url(../images/core-java.png);
 }
 
 .python{
@@ -203,14 +115,189 @@ body{
     background: url(../images/android.png);
 }
 
-@media screen and (min-width:500px) and (max-width:750px){
-    .inner h2{
-        font-size: 1.7em;
+.ux-ui{
+    background: url(../images/ui-ux-logo.png);
+}
+
+.start-heading h2{
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    letter-spacing: 1px;
+    font-size: 2.8em;
+    line-height: 50px;
+}
+
+.arrow-down{
+    margin: 0 auto;
+    margin-top: 50px;
+    background: url(../images/arrow-down.png) center center no-repeat;
+    background-size: contain;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    margin-bottom: 80px;
+}
+
+.intro{
+    position: sticky;
+    padding: 30px 80px;
+    color: white;
+    background-color: rgb(40,40,40);
+    z-index: 2;
+}
+
+.animateToRight{
+    visibility: hidden;
+}
+.intro h2{
+    margin-bottom: 20px;
+}
+
+.intro  h2::after,.lang h2::after,.ongoing h2::after{
+    content: "";
+    width: 350px;
+    height: 4px;
+    display: block;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.lang > h2::after{
+    width: 550px;
+}
+
+.ongoing h2::after{
+    width: 270px;
+}
+
+@media screen and (max-width:350px){
+    .intro h2::after{
+        width: 100%;
     }
 }
 
-@media screen and (max-width:500px){
-    .inner h2{
-        font-size: 1.5em;
+@media screen and (max-width:270px){
+    .ongoing h2::after{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:550px){
+    .lang > h2::after{
+        width: 100%;
+    }
+    .lang > h2{
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+    .intro h2{
+        font-size: 1.8em;
+    }
+}
+
+.intro p{
+    font-size: 1.3em;
+}
+
+.lang{
+    margin-bottom: 160px;
+}
+
+.lang,.ongoing{
+    margin-top: 30px;
+}
+
+.ongoing{
+    margin-bottom: 80px; 
+}
+
+.tags{
+    text-align: center;
+}
+
+.tags-wrapper{
+    padding: 10px;
+}
+
+.lang  .tags-wrapper{
+    visibility: hidden;
+}
+
+.project{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgb(2, 127, 187);
+    padding: 20px;
+}
+
+.project a{
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 120%;
+    margin-top: 20px;
+}
+
+.project a:hover{
+    color: rgba(255,255,255,0.9);
+}
+
+.linkedin-logo{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    background: url(../images/linkedinlogo.png) center center no-repeat;
+    background-size: contain;
+    padding: 0;
+    margin: 0;
+    top: 5px;
+}
+
+@media screen and (max-width:400px){
+    .face{
+        width: 180px;
+        height: 180px;
+        margin-top: 40px;
+    }
+    .start-heading h2{
+        font-size: 1.8em;
+        margin-top: 40px;
+    }
+    .arrow-down{
+        margin-top: 4vh;
+    }
+    .social-bars{
+        top: 100px;
+    }
+    .arrow-down{}
+}
+
+@media screen and (max-width:700px){
+    .intro{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .face{
+        margin-top: 80px;
+    }
+    .arrow-down{
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .project{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:300px){
+    .project{
+        width: 90%;
     }
 }
