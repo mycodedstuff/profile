@@ -1,4 +1,6 @@
 body{
+    background: url(../images/project-background.jpg) center center fixed no-repeat;
+    background-size: cover;
     margin: 0;
     overflow-x: hidden !important;
     overflow-y: scroll !important;
@@ -10,9 +12,6 @@ body{
 
 #mainPage{
     overflow: hidden !important;
-    background: #00c6ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #mainDiv{
@@ -23,6 +22,10 @@ body{
 
 #nav-toggle label{
     font-size: .9em;
+}
+
+.sidenav{
+    background: linear-gradient(to left, rgba(0,0,0,.0), rgba(0,0,0,0.8));
 }
 
 .hexagon {
@@ -99,8 +102,9 @@ body{
 }
 
 .project-details{
+/*    position: sticky;*/
     overflow: hidden;
-    background: rgba(33,33,33,.9);
+    background: rgba(0,0,0,0.4);
     display: none;
     margin: 0 auto;
     width: 90%;
@@ -166,6 +170,12 @@ body{
 
 #fullscreen-close:hover{
     opacity: 1;
+}
+
+.footer{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    background: -moz-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
 }
 
 .caption{
@@ -269,15 +279,19 @@ body{
     font-size: 14px !important;;
 }
 
+/* Tooltip on top */
 .code a + .tooltip.top > .tooltip-arrow {
     border-top: 5px solid #73AD21;
 }
+/* Tooltip on bottom */
 .code a + .tooltip.bottom > .tooltip-arrow {
     border-bottom: 5px solid #73AD21;
 }
+/* Tooltip on left */
 .code a + .tooltip.left > .tooltip-arrow {
     border-left: 5px solid #73AD21;
 }
+/* Tooltip on right */
 .code a + .tooltip.right > .tooltip-arrow {
     border-right: 5px solid #73AD21;
 }

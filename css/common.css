@@ -16,12 +16,12 @@ body{
     background-color: transparent;
 }
 
-/*nav{*/
-/*    background: linear-gradient(to bottom, #555555 0%, #222222 100%);*/
-/*    background: -moz-linear-gradient(to bottom, #555555 0%, #222222 100%);*/
-/*    background: -o-linear-gradient(to bottom, #555555 0%, #222222 100%);*/
-/*    background: -webkit-linear-gradient(to bottom, #555555 0%, #222222 100%);*/
-/*}*/
+nav{
+    background: linear-gradient(to bottom, #555555 0%, #222222 100%);
+    background: -moz-linear-gradient(to bottom, #555555 0%, #222222 100%);
+    background: -o-linear-gradient(to bottom, #555555 0%, #222222 100%);
+    background: -webkit-linear-gradient(to bottom, #555555 0%, #222222 100%);
+}
 
 .navbar-fixed-left {
     width: 80px;
@@ -37,13 +37,12 @@ body{
     top: 0;
     left: 0;
     bottom: 0;
-/*    background: linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));*/
-/*    background: -webkit-linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));*/
-/*    background: -moz-linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));*/
-/*    background: -o-linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));*/
+    background: linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));
+    background: -webkit-linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));
+    background: -moz-linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));
+    background: -o-linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.9));
     overflow-x: hidden;
     padding-top: 60px;
-    background-color: rgb(33,33,33);
 }
 
 .sidenav a {
@@ -87,34 +86,34 @@ body{
 
 .bar {
     display: block;
-    width: 70%;
-    height: 4px;
-    background-color: rgba(255, 255, 255,1.0);
+    width: 80%;
+    height: 6px;
+    background-color: rgba(52, 152, 219,1.0);
     margin: 8px auto;
-    transition: 0.3s;
-    border-radius: 50px;
 }
 
 #nav-toggle{
-    width: 50px;
+    width: 70px;
     position: absolute;
-    left: 15px;
+    left: 5px;
     display: inline;
+    border: 2px solid rgba(255,255,255,.5);
     transition: background-color 0.4s;
     -webkit-transition: background-color 0.4s;
     -moz-transition: background-color 0.4s;
     -o-transition: background-color 0.4s;
+    padding: 9px;
+    border-radius: 8px;
     margin-top: 25px;
-    padding: 0;
 }
 
-.navbar-toggle:hover .bar:nth-child(1){
-    transform: translate(70%,160%) rotate(45deg);
-    width: 30%;
+.navbar-toggle:hover{
+    background-color: rgba(0,0,0,0.4);
 }
-.navbar-toggle:hover .bar:nth-child(3){
-    transform: translate(70%,-160%) rotate(-45deg);
-    width: 30%;
+
+.navbar-toggle label{
+    color: white;
+    cursor: pointer;
 }
 
 .social .link {
@@ -175,6 +174,71 @@ body{
     background-color: #00ACEE;
 }
 
+.followtext{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+    cursor: pointer;
+    border: 1px solid black;
+    border-left: 2px solid white;
+    padding: 5px;
+    word-wrap: break-word;
+    float: left;
+    width: 90px;
+    font-size: 13px;
+    height: 52px;
+    text-align: center;
+}
+
+.followtext a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+}
+
+.followtext:hover{
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526); 
+    background: -moz-linear-gradient(to right, #414345, #232526);
+}
+
+.followpane{
+    position: absolute;
+    right: 0;
+    z-index: 200;
+    transition: 1s;
+    margin-top: 30px;
+    width: 90px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+}
+
+.social{
+    width: 379px;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+    background: -webkit-linear-gradient(to right, rgba(67,67,67,0.5), rgba(30,30,30,0.7));
+    background: linear-gradient(to right, rgba(67,67,67,0.5), rgba(30,30,30,0.7));
+    background: -moz-linear-gradient(to right, rgba(67,67,67,0.5), rgba(30,30,30,0.7));
+}
+
+#social-container{
+    position: absolute;
+    margin-left: 90px;
+    overflow: hidden;
+    width: 0px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -webkit-filter: drop-shadow(0px 0px 8px black);
+}
+
 .nav-profile{
     background: url(../images/me3.jpg) center center no-repeat;
     background-size: cover;
@@ -190,6 +254,18 @@ body{
     margin-left: 40px;
     border-radius: 100%;
     margin-bottom: 50px;
+    box-shadow: 0px 0px 40px black;
+}
+
+#socialclosebtn{
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    font-size: 2em;
+    margin-left: 40px;
 }
 
 .credits{
@@ -220,13 +296,16 @@ body{
 
 .active{
     color: white !important;
-    text-shadow: 0px 0px 10px;
+    text-shadow: 0px 0px 20px;
 }
 
 .footer{
     text-align: center;
     width: 100%;
-    background: rgb(33,33,33);
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    background: -moz-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    background: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
     color: white;
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -367,98 +446,4 @@ body{
     #social-container{
         margin-left: 70px;
     }
-}
-
-
-.social-bars{
-    right: 0;
-    top: 32vh;
-    position: fixed;
-    z-index: 1000;
-}
-
-.fb-bar{
-    height: 50px;
-    background-color: rgb(61, 90, 152);
-    width: 50px;
-    padding: 7px;
-    border-top-left-radius: 10px;
-}
-
-.fb-bar a{
-    display: block;
-    background: url(../images/fb-icon.png) center center no-repeat;
-    background-size: contain;
-    height: 40px;
-    width: 40px;
-}
-
-.gplus-bar{
-    height: 50px;
-    background-color: rgb(255,87,34);
-    width: 50px;
-    padding: 9px;
-}
-
-.gplus-bar a{
-    display: block;
-    background: url(../images/google-plus.png) center center no-repeat;
-    background-size: contain;
-    height: 35px;
-    width: 35px;
-}
-
-.insta-bar{
-    height: 50px;
-    background-color: rgb(66,66,66);
-    width: 50px;
-    padding: 7px;
-}
-
-.insta-bar a{
-    display: block;
-    background: url(../images/insta.png) center center no-repeat;
-    background-size: contain;
-    height: 40px;
-    width: 40px;
-}
-
-.linked-bar{
-    height: 50px;
-    background-color: rgb(25,118,210);
-    width: 50px;
-    padding: 7px;
-}
-
-.linked-bar a{
-    display: block;
-    background: url(../images/in.png) center center no-repeat;
-    background-size: contain;
-    height: 40px;
-    width: 40px;
-}
-
-.twitter-bar{
-    height: 50px;
-    background-color: rgb(3,169,244);
-    width: 50px;
-    padding: 11px;
-    border-bottom-left-radius: 10px;
-}
-
-.twitter-bar a{
-    display: block;
-    background: url(../images/twitter-logo.png) center center no-repeat;
-    background-size: contain;
-    height: 30px;
-    width: 30px;
-}
-
-.social-bars div{
-    transition: 0.4s;
-}
-
-.social-bars div:hover{
-    margin-left: -10px;    
-    width: 60px;
 }
