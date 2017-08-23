@@ -138,7 +138,7 @@ body{
 
 .active{
     color: white !important;
-    text-shadow: 0px 0px 10px;
+    text-shadow: 0px 0px 40px;
 }
 
 .footer{
@@ -258,14 +258,11 @@ body{
 
 @media screen and (max-width:450px){
     #nav-toggle{
-        width: 60px;
-        padding: 6px;
-        margin-top: 15px;
-    }
-    .bar{
-        height: 5px;
-        margin: 8px auto;
-
+        -webkit-transform: scale(0.95);
+        -moz-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        -o-transform: scale(0.95);
+        transform: scale(0.95);
     }
 }
 

@@ -49,4 +49,7 @@ $(function(){
             }});
         });
     }
+    $(".arrow-down").click(function(){
+        $("html,body").stop().animate({scrollTop: $("#contact-page .row").offset().top - 35},1000);
+    });
 });

@@ -3,23 +3,16 @@ body{
     color: white;
     padding: 0 !important;
     overflow-y: auto !important;
-    background-color: rgb(48,63,159);
-    background-image: linear-gradient(92deg,#f35626,#feab3a);
-    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
-    background-image: -moz-linear-gradient(92deg,#f35626,#feab3a);
-    background-image: -o-linear-gradient(92deg,#f35626,#feab3a);
 /*    animation: hue 20s infinite linear;*/
 }
 
 #mainPage{
-    background: #EB3349;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #F45C43, #EB3349);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #F45C43, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #2980b9;
 }
 
 #contact-page{
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 110px;
 }
 
 .transparent-layer{
@@ -55,8 +48,12 @@ body{
 
 #contact-page .row{
     margin: 0 auto;
-    margin-top: 80px;
-    width: 90%;
+    margin-top: 40px;
+    padding: 40px;
+    width: 93%;
+    background: rgba(40,40,40,1);
+    border-radius: 20px;
+    box-shadow: 8px 8px 10px rgba(20,20,20,0.8);
 }
 
 .form-group{
@@ -218,7 +215,11 @@ textarea{
     margin-left: 8px;
 }
 form button{
-    background-color: rgb(40,40,40);
+    background-color:#2980b9;
+    transition: 1s;
+}
+form button *{
+    color: white;
 }
 @media screen and (max-width: 600px){
     #more-ways{
@@ -252,6 +253,147 @@ form button{
     }
     #contact-page .row{
         width: 100%;
+        margin-top: 40px;
+    }
+}
+
+.reasons{
+    text-align: center;
+    width: 85%;
+    margin: -60px auto 20px auto;
+    background: rgb(40,40,40);
+    padding: 20px 20px;
+    border-radius: 20px;
+    max-width: 620px;
+    box-shadow: 8px 8px 10px rgba(20,20,20,0.8);
+}
+
+.reasons *{
+    margin: 0;
+    padding: 0;
+}
+.reasons ul{
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.reasons ul li{
+    line-height: 25px;
+    list-style: square;
+}
+
+.if{
+    float: left;
+    margin-top: 1%;
+    margin-left: 6%;
+}
+
+.if h1{
+    font-size: 7em;
+}
+.reasons-list{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.reasons .then{
+    text-align: center;
+    margin: 20px;
+}
+.reasons .then h5{
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.get-back{
+    text-align: justify;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.get-back h4{
+    font-size: 1.3em;
+}
+
+@media screen and (max-width:755px){
+    .if h1{
+        display: none;
+    }
+    .reasons-list li::before{
+        content: "If";
+        margin-right: 5px;
+        text-transform: capitalize;
+    }
+    .reasons-list li{
+        text-transform: lowercase;
+    }
+    .reasons-list{
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .reasons-list li .hi{
+        text-transform: capitalize;
+    }
+}
+
+.arrow-down{
+    margin: 0px auto;
+    background: url(../images/arrow-down.png) center center no-repeat;
+    background-size: contain;
+    height: 50px;
+    display: block;
+    width: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.send-mail span{
+    font-size: 1.6em;
+    text-decoration: none;
+    color: white;
+}
+
+.send-mail{
+    margin-top: 40px;
+}
+
+.paper-clip{
+    position: relative;
+    background: url(../images/paper%20clip.png) center center no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 90px;
+    display: inline-block;
+    top: 2.5px;
+    left: -260px;
+}
+
+@media screen and (min-width:715px) and (max-width:780px){
+    .paper-clip{
+        left: -240px;
+    }
+}
+
+@media screen and (min-width:625px) and (max-width:714px){
+    .paper-clip{
+        left: -200px;
+    }
+}
+@media screen and (min-width:545px) and (max-width:624px){
+    .paper-clip{
+        left: -170px;
+    }
+}
+@media screen and (max-width:544px){
+    .paper-clip{
+        display: none;
+    }
+    .reasons{
         margin-top: 40px;
     }
 }
