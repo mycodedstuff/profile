@@ -8,5 +8,5 @@
 ###### 3. Highly Compressed Images for faster load up.
 ###### 4. Almost completely static website but still behaves like a dynamic one.
 
-![Website Mockup](https://i.imgur.com/HSoz0Lh.jpg)
+![Website Mockup](https://i.imgur.com/Sik4aUP.png)
 
