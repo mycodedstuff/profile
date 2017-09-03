@@ -131,6 +131,7 @@ $(function(){
                             title: "This project is not yet uploaded.",
                             placement: "auto right"
                         });
+                        $(".code a").removeAttr("href");
                     }else{
                         $(".code a").tooltip("destroy");
                         $(".code a").attr("href", link);
