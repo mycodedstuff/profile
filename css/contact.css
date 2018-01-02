@@ -7,7 +7,9 @@ body{
 }
 
 #mainPage{
-    background: #2980b9;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #contact-page{
@@ -215,7 +217,7 @@ textarea{
     margin-left: 8px;
 }
 form button{
-    background-color:#2980b9;
+    background-color: #CF3888;
     transition: 1s;
 }
 form button *{
