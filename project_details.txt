@@ -50,3 +50,16 @@ There are some key features of this project:
 3. Highly Compressed Images for faster load up.
 4. Almost completely static website but still behaves like a dynamic one.
 </div>
+<div id="sabstore">
+This is a live project which is made for a company named SabStore which is a delivery agent.
+In this app an end user can have three different user interfaces provided according to the role of the user.
+There are three roles of an end user :- User, Vendor, Delivery Agent.
+
+User can order from the app.
+After the order is processed from admin the delivery agent and the vendors whose product is listed in the app will receive the order.
+
+The vendor can complete the order from his side once he handovers the food to delivery agent.
+
+Only the delivery agent can see address to which the order is to be delivered also with that customer name and it's contact is also there is case if any contact is required.
+The order delivery is confirmed by the delivery agent once it enters the otp which is only available to the customer and it is generated at the moment the order is placed. The order otp is meant to be only kept by the customer.
+</div>
