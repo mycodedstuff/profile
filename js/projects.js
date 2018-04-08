@@ -125,17 +125,9 @@ $(function(){
                 dataType: "html",
                 type: "get",
                 success: function(data){
-                    var link = $(data).find("#"+tag).text();
-                    if(link == ""){
-                        $(".code a").tooltip({
-                            title: "This project is not yet uploaded.",
-                            placement: "auto right"
-                        });
-                        $(".code a").removeAttr("href");
-                    }else{
-                        $(".code a").tooltip("destroy");
-                        $(".code a").attr("href", link);
-                    }
+                    var data = $(data).find("#"+tag).html();
+					$(".code").empty();
+					$(".code").html(data);
                 }
             });
             title = $(callingHexagon).find(".project_title").text();
@@ -156,8 +148,6 @@ $(function(){
       hideDelay = false;
        setTimeout(function(){
             $('#fullscreen').modal('hide'); $('#fullscreen').removeClass('zoomOut').addClass('zoomIn');
-            $(".pushback").css("transform","scale3d(1,1,1)");
-            $(".pushback").css("-webkit-transform","scale3d(1,1,1)");
           },700);
           return false;
       }
